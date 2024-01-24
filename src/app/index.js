@@ -14,9 +14,9 @@ const ethereumNodeEndpoint = "http://localhost:7545";
 const contractAddress = "0x50769DfF329d4ff57ef748d6f5585b11e867cfa2";
 
 const privateKey =
-      "0xbe05d1981bbb46b29b450604b825650a196103b5292062ddeaa8f0a371d3d7aa"; // Replace with the user's private key
+  "0xbe05d1981bbb46b29b450604b825650a196103b5292062ddeaa8f0a371d3d7aa"; // Replace with the user's private key
 
-const provider = new Provider(privateKey, ethereumNodeEndpoint); 
+const provider = new Provider(privateKey, ethereumNodeEndpoint);
 
 const web3 = new Web3(provider);
 const networkId = await web3.eth.net.getId();
@@ -30,7 +30,9 @@ app.post("/register", async (req, res) => {
     const { username, displayName } = req.body;
 
     // Create a transaction object
-    const receipt =  await contract.methods.registerUser(username, displayName).send({ from: userAddress });
+    const receipt = await contract.methods
+      .registerUser(username, displayName)
+      .send({ from: userAddress });
 
     // Convert BigInt values to strings in the receipt
     const receiptString = JSON.stringify(receipt, (key, value) =>
