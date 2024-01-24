@@ -10822,10 +10822,16 @@
       "links": {},
       "address": "0x710b3e799Be5e3742d2F72Bf16bcD5Fd4bC66b22",
       "transactionHash": "0xd03e867b03eea5d2f50a8fa27c54d03db2dbbfb8c6d5462eea97e05f3f703882"
+    },
+    "1706118286143": {
+      "events": {},
+      "links": {},
+      "address": "0x5BBa9a477eE255E16CC23C8AB1657823A33FA2C2",
+      "transactionHash": "0x3a5079c0bc48447b9ef0f6e8e0421bd9c27a4e94141a8664559acb1eb6cceece"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-24T13:52:56.804Z",
+  "updatedAt": "2024-01-24T17:45:55.764Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "A smart contract for facilitating secure and decentralized messaging between users.",
