@@ -3,12 +3,13 @@ const { Web3 } = require("web3");
 const URContract = require("./build/contracts/UserRegistery.json");
 
 const app = express();
+const userAddress = "0x9544e516348a5818cF4c900C0c57A085d576585B"; // Replace with the actual user's Ethereum address
 
 app.use(express.json());
 
 const port = 2140;
 
-const ethereumNodeEndpoint = "http://localhost:8545";
+const ethereumNodeEndpoint = "http://localhost:7545";
 const contractAddress = "0x50769DfF329d4ff57ef748d6f5585b11e867cfa2";
 
 const web3 = new Web3(ethereumNodeEndpoint);
@@ -22,9 +23,8 @@ const contract = new web3.eth.Contract(contractAbi, contractAddress);
 app.post("/register", async (req, res) => {
   try {
     const { username, displayName } = req.body;
-    const userAddress = "0xF097051832E8958878155d49eF269ae8daF91106"; // Replace with the actual user's Ethereum address
     const privateKey =
-      "0x6cca051f08b8419c0198d93828e1bd3cfee9b79d5968bdc6c31441c8404d3161"; // Replace with the user's private key
+      "0xbe05d1981bbb46b29b450604b825650a196103b5292062ddeaa8f0a371d3d7aa"; // Replace with the user's private key
 
     // Create a transaction object
     const txObject = contract.methods.registerUser(username, displayName);
@@ -50,10 +50,15 @@ app.post("/register", async (req, res) => {
       signedTx.rawTransaction
     );
 
+    // Convert BigInt values to strings in the receipt
+    const receiptString = JSON.stringify(receipt, (key, value) =>
+      typeof value === "bigint" ? value.toString() : value
+    );
+
     res.json({
       success: true,
       message: "User registered successfully",
-      receipt,
+      receipt: JSON.parse(receiptString), // Parse the string back to JSON
     });
   } catch (error) {
     console.error(error);
@@ -67,8 +72,7 @@ app.post("/register", async (req, res) => {
 app.get("/profile", async (req, res) => {
   try {
     // Make sure to replace 'USER_ADDRESS' with the user's Ethereum address
-    const userAddress = "USER_ADDRESS";
-    const userProfile = await contract.methods.users(userAddress).call();
+    const userProfile = await contract.methods.getUserProfile.call();
 
     res.json({ success: true, data: userProfile });
   } catch (error) {
