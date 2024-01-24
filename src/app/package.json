@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "module": "web3Config.ts",
   "scripts": {
     "test": "jest"
   },
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/HardikDhuri/DappComm#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "ethers": "^6.10.0",
+    "express": "^4.18.2",
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.11.5",
+    "web3": "^4.4.0"
   }
 }
