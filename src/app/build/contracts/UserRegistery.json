@@ -11616,10 +11616,16 @@
       "links": {},
       "address": "0x50769DfF329d4ff57ef748d6f5585b11e867cfa2",
       "transactionHash": "0x7bba3a6283040853a06c5f16078fa379dac64b47c3df3e92d32701f72b09fa1e"
+    },
+    "1706118286143": {
+      "events": {},
+      "links": {},
+      "address": "0x28ec1647720014bB6D10aE63cd07377D540dcd87",
+      "transactionHash": "0x66705ac74b7cbfbc6f791ad873db04e957259c6c6832717001651a551df9f189"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-24T13:52:56.790Z",
+  "updatedAt": "2024-01-24T17:45:55.748Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "A smart contract for user registration and identity management on the Ethereum blockchain.",

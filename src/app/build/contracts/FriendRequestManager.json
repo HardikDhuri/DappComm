@@ -7916,10 +7916,16 @@
       "links": {},
       "address": "0xC5fb91c4eA0DCB3fb533e247D9d7e442FC4B63d7",
       "transactionHash": "0x85903695d1dc8aed7ea93f5af9e82296250b9ebb0713bda55c8fe65f305ed42e"
+    },
+    "1706118286143": {
+      "events": {},
+      "links": {},
+      "address": "0x06f2f222d16Ed2cB254b41263Ca1f9F148c057ae",
+      "transactionHash": "0x3e16673e97289ae33e34e17ca5e1134fe4e587862a717580f21fea3c6e0941e2"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-24T13:52:56.798Z",
+  "updatedAt": "2024-01-24T17:45:55.759Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "A smart contract for managing friend requests between users.",
