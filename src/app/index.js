@@ -24,7 +24,30 @@ const httpProvider = new Web3.providers.HttpProvider(ganacheUrl);
 const web3 = new Web3(httpProvider, privateKey2);
 
 // Connect to the smart contract using the ABI and contract address
-const contract = new web3.eth.Contract(URContract.abi, networkId);
+const contract = new web3.eth.Contract(URContract.abi, contractAddress);
+contract.options = {
+  address: contractAddress,
+  from: contractAddress,
+  gasPrice: "10000000000000",
+  gas: 1000000,
+};
+
+const frmContract = new web3.eth.Contract(
+  FRMContractJson.abi,
+  FRMContractAddress
+);
+frmContract.options = {
+  address: FRMContractAddress,
+  gas: 1000000,
+};
+
+app.get("/get_ether_details", function (req, res) {
+  var respo = {
+    version: web3.version,
+    // "balance1":balance
+  };
+  res.json(respo);
+});
 
 // Endpoint to register a new user
 app.post("/register", async (req, res) => {
@@ -34,7 +57,7 @@ app.post("/register", async (req, res) => {
     // Create a transaction object
     const receipt = await contract.methods
       .registerUser(username, displayName)
-      .send({ from: userAddress });
+      .send({ from: userAddress2 });
 
     // Convert BigInt values to strings in the receipt
     const receiptString = JSON.stringify(receipt, (key, value) =>
@@ -58,9 +81,106 @@ app.post("/register", async (req, res) => {
 app.get("/profile", async (req, res) => {
   try {
     // Make sure to replace 'USER_ADDRESS' with the user's Ethereum address
-    const userProfile = await contract.methods.getUserProfile.call();
+    const userProfile = await contract.methods
+      .getUserProfile()
+      .call({ from: userAddress2 });
 
     res.json({ success: true, data: userProfile });
+  } catch (error) {
+    console.error(error);
+    res
+      .status(500)
+      .json({ success: false, message: "Failed to fetch user profile" });
+  }
+});
+
+// Endpoint to sent friend request
+app.post("/send-request", async (req, res) => {
+  try {
+    const { receiverId } = req.body;
+
+    const receipt = await frmContract.methods
+      .sendFriendRequest(receiverId)
+      .send({ from: userAddress2 });
+
+    // Convert BigInt values to strings in the receipt
+    const receiptString = JSON.stringify(receipt, (key, value) =>
+      typeof value === "bigint" ? value.toString() : value
+    );
+
+    res.json({
+      success: true,
+      message: "Friend request sent successfully",
+      receipt: JSON.parse(receiptString), // Parse the string back to JSON
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ success: false, message: "Failed to send request" });
+  }
+});
+
+// Endpoint to get incoming friend requests for a specific user
+app.get("/friend-requests/incoming", async (req, res) => {
+  try {
+    // Get incoming friend requests for the user
+    const ifrequests = await frmContract.methods
+      .getIncomingFriendRequests()
+      .call({ from: userAddress2 });
+
+    const ifrequestsJson = JSON.stringify(ifrequests, (key, value) => {
+      if (typeof value === "bigint") {
+        return value.toString(); // Convert string representation of a number to BigInt
+      }
+      return value; // Return unchanged for other types
+    });
+
+    res.json({ success: true, data: ifrequestsJson });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch incoming friend requests",
+    });
+  }
+});
+
+// Endpoint to get incoming friend requests for a specific user
+app.get("/friend-requests/outgoing", async (req, res) => {
+  try {
+    // Get incoming friend requests for the user
+    const ofrquests = await frmContract.methods
+      .getOutgoingFriendRequests()
+      .call({ from: userAddress2 });
+    const requests = [];
+
+    ofrquests.forEach((request) => {
+      const requestJson = JSON.stringify(request, (key, value) => {
+        if (typeof value === "bigint") {
+          return value.toString(); // Convert string representation of a number to BigInt
+        }
+        return value; // Return unchanged for other types
+      });
+      requests.push(requestJson);
+    });
+
+    res.json({ success: true, data: JSON.parse(requests) });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch outgoing friend requests",
+    });
+  }
+});
+
+// Endpoint to get users
+app.get("/users", async (req, res) => {
+  try {
+    const users = await contract.methods
+      .getAllUserAddresses()
+      .call({ from: userAddress2 });
+
+    res.json({ success: true, data: users });
   } catch (error) {
     console.error(error);
     res
