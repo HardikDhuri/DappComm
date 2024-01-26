@@ -1,25 +1,27 @@
 const express = require("express");
 const { Web3 } = require("web3");
 const URContract = require("./build/contracts/UserRegistery.json");
+const FRMContractJson = require("./build/contracts/FriendRequestManager.json");
+
+require("dotenv").config();
+
+const ganacheUrl = process.env.GANACHE_URL;
+const contractAddress = process.env.CONTRACT_ADDRESS;
+const userAddress = process.env.USER_ADDRESS1;
+const userAddress2 = process.env.USER_ADDRESS2;
+const privateKey = process.env.PRIVATE_KEY;
+const privateKey2 = process.env.PRIVATE_KEY2;
+const FRMContractAddress = process.env.FRIEND_REGISTRY_ADDRESS;
 
 const app = express();
-const userAddress = "0x9544e516348a5818cF4c900C0c57A085d576585B"; // Replace with the actual user's Ethereum address
 
 app.use(express.json());
 
 const port = 2140;
 
-const ethereumNodeEndpoint = "http://localhost:7545";
-
-const contractAddress = "0x50769DfF329d4ff57ef748d6f5585b11e867cfa2";
-
-const privateKey =
-  "0xbe05d1981bbb46b29b450604b825650a196103b5292062ddeaa8f0a371d3d7aa"; // Replace with the user's private key
-
-const provider = new Provider(privateKey, ethereumNodeEndpoint);
-
-const web3 = new Web3(provider);
-const networkId = await web3.eth.net.getId();
+// Connect to the Ethereum network using the HTTP provider
+const httpProvider = new Web3.providers.HttpProvider(ganacheUrl);
+const web3 = new Web3(httpProvider, privateKey2);
 
 // Connect to the smart contract using the ABI and contract address
 const contract = new web3.eth.Contract(URContract.abi, networkId);
