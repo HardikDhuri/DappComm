@@ -79,6 +79,22 @@ contract FriendRequestManager {
     }
 
     /**
+     * @dev Gets the incoming friend requests for the caller.
+     * @return An array of incoming friend requests.
+     */
+    function getIncomingFriendRequests() external view returns (FriendRequest[] memory) {
+        return incomingFriendRequests[msg.sender];
+    }
+
+    /**
+     * @dev Gets the outgoing friend requests for the caller.
+     * @return An array of outgoing friend requests.
+     */
+    function getOutgoingFriendRequests() external view returns (FriendRequest[] memory) {
+        return outgoingFriendRequests[msg.sender];
+    }
+
+    /**
      * @dev Checks if a friend request already exists.
      * @param _sender The address of the user who sent the friend request.
      * @param _receiver The address of the user who received the friend request.
