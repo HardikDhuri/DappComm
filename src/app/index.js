@@ -86,13 +86,13 @@ app.get("/profile", async (req, res) => {
       .getUserProfile(username)
       .call({ from: address });
 
-    console.log(userProfile);
-    uName = userProfile[0];
-    displayName = userProfile[1];
-
     res.status(200).json({
       success: true,
-      data: { username: uName, displayName: displayName },
+      data: {
+        username: userProfile[0],
+        displayName: userProfile[1],
+        address: userProfile[2],
+      },
     });
   } catch (error) {
     console.error(error);

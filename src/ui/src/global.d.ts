@@ -5,4 +5,5 @@ interface Window {
 interface User {
   username: string;
   displayName: string;
+  address: string;
 }

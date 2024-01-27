@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Navigate, Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 
 interface HomeProps {
@@ -7,13 +7,12 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ user }) => {
+  const navigate = useNavigate();
   useEffect(() => {
-    console.log("User:", user);
-  }, []);
-
-  if (!user) {
-    return <Navigate to="/signin" />;
-  }
+    if (!user) {
+      return navigate("/signin");
+    }
+  }, [user]);
 
   return (
     <div className="flex flex-col h-screen">

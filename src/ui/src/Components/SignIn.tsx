@@ -7,14 +7,19 @@ import {
   useState,
 } from "react";
 import { getUserProfile, registerUser } from "../api";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 interface SignInProps {
+  user: User | null;
   address: string;
   setUser: Dispatch<SetStateAction<User | null>>;
 }
 
-const SignIn: FC<SignInProps> = ({ setUser, address }) => {
+const SignIn: FC<SignInProps> = ({
+  setUser,
+  address: currentUserAddress,
+  user,
+}) => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [displayName, setDisplayName] = useState("");
@@ -22,24 +27,33 @@ const SignIn: FC<SignInProps> = ({ setUser, address }) => {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const data = await getUserProfile(address);
+        const data = await getUserProfile(currentUserAddress);
         setUser(data.data);
-        navigate("/chat");
       } catch (error) {
         console.error("Error fetching user profile:", error);
       }
     };
 
     fetchUserProfile();
-  }, [address]);
+  }, [currentUserAddress]);
+
+  if (currentUserAddress && user?.username && user?.displayName) {
+    return <Navigate to="/chat" />;
+  }
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const data = await registerUser(username, displayName, address);
+      const data = await registerUser(
+        username,
+        displayName,
+        currentUserAddress
+      );
       if (data.success) {
-        const { username, displayName } = await getUserProfile(address);
-        setUser({ username, displayName });
+        const { username, displayName, address } = await getUserProfile(
+          currentUserAddress
+        );
+        setUser({ username, displayName, address });
         navigate("/chat");
       } else {
         console.error("Registration failed:", data.message);

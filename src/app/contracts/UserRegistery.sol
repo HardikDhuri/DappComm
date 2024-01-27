@@ -68,17 +68,17 @@ contract UserRegistery {
     /**
      * @dev Retrieves the user profile based on the provided username.
      * @param _username The username of the user.
-     * @return The username and display name of the user.
+     * @return The user's address, username, and display name.
      */
-    function getUserProfile(string memory _username) external view returns (string memory, string memory) {
+    function getUserProfile(string memory _username) external view returns (address, string memory, string memory) {
         for (uint256 i = 0; i < registeredUsers.length; i++) {
             address userAddress = registeredUsers[i];
             if (keccak256(bytes(users[userAddress].username)) == keccak256(bytes(_username))) {
-                return (users[userAddress].username, users[userAddress].displayName);
+                return (userAddress, users[userAddress].username, users[userAddress].displayName);
             }
         }
-        // If the username is not found, return empty strings
-        return ("", "");
+        // If the username is not found, return empty values
+        return (address(0), "", "");
     }
 
     // Dynamic array to store all registered user addresses

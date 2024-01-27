@@ -59,7 +59,11 @@ function App() {
         <Route
           path="/signin"
           element={
-            <SignIn address={connetedAccount} setUser={setCurrentUser} />
+            <SignIn
+              user={currentUser}
+              address={connetedAccount}
+              setUser={setCurrentUser}
+            />
           }
         />
       </Routes>
