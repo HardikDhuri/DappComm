@@ -20,8 +20,6 @@ const Navbar: React.FC = () => {
           <button className="text-white mr-4 hover:underline">
             <Link to="notifications">Notifications</Link>
           </button>
-          {/* Add other navigation buttons here */}
-          <button className="text-white hover:underline">Logout</button>
         </div>
       </div>
     </div>

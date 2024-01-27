@@ -56,12 +56,29 @@ contract UserRegistery {
     }
 
     /**
-     * @dev Retrieves the user profile of the calling user.
+     * @dev Retrieves the user profile based on the provided Ethereum address.
+     * @param _userAddress The Ethereum address of the user.
      * @return The username and display name of the user.
      */
-    function getUserProfile() external view returns (string memory, string memory) {
-        UserProfile storage user = users[msg.sender];
+    function getUserProfileByAddress(address _userAddress) external view returns (string memory, string memory) {
+        UserProfile storage user = users[_userAddress];
         return (user.username, user.displayName);
+    }
+
+    /**
+     * @dev Retrieves the user profile based on the provided username.
+     * @param _username The username of the user.
+     * @return The username and display name of the user.
+     */
+    function getUserProfile(string memory _username) external view returns (string memory, string memory) {
+        for (uint256 i = 0; i < registeredUsers.length; i++) {
+            address userAddress = registeredUsers[i];
+            if (keccak256(bytes(users[userAddress].username)) == keccak256(bytes(_username))) {
+                return (users[userAddress].username, users[userAddress].displayName);
+            }
+        }
+        // If the username is not found, return empty strings
+        return ("", "");
     }
 
     // Dynamic array to store all registered user addresses

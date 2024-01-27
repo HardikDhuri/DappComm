@@ -1,4 +1,5 @@
 const express = require("express");
+var cors = require("cors");
 const { Web3 } = require("web3");
 const URContract = require("./build/contracts/UserRegistery.json");
 const FRMContractJson = require("./build/contracts/FriendRequestManager.json");
@@ -16,6 +17,7 @@ const FRMContractAddress = process.env.FRIEND_REGISTRY_ADDRESS;
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 const port = 2140;
 
@@ -52,40 +54,70 @@ app.get("/get_ether_details", function (req, res) {
 // Endpoint to register a new user
 app.post("/register", async (req, res) => {
   try {
-    const { username, displayName } = req.body;
+    const { username, displayName, address } = req.body;
 
     // Create a transaction object
     const receipt = await contract.methods
       .registerUser(username, displayName)
-      .send({ from: userAddress2 });
+      .send({ from: address });
 
     // Convert BigInt values to strings in the receipt
     const receiptString = JSON.stringify(receipt, (key, value) =>
       typeof value === "bigint" ? value.toString() : value
     );
+    const { message } = JSON.parse(receiptString);
 
-    res.json({
+    res.status(201).json({
       success: true,
-      message: "User registered successfully",
-      receipt: JSON.parse(receiptString), // Parse the string back to JSON
+      message: message,
     });
   } catch (error) {
-    console.error(error);
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to register user" });
+    const message = error.innerError.message.split("revert")[1].trim();
+    res.status(500).json({ success: false, message: message });
   }
 });
 
 // Endpoint to get user profile
 app.get("/profile", async (req, res) => {
   try {
+    const { address, username } = req.query;
     // Make sure to replace 'USER_ADDRESS' with the user's Ethereum address
     const userProfile = await contract.methods
-      .getUserProfile()
+      .getUserProfile(username)
+      .call({ from: address });
+
+    console.log(userProfile);
+    uName = userProfile[0];
+    displayName = userProfile[1];
+
+    res.status(200).json({
+      success: true,
+      data: { username: uName, displayName: displayName },
+    });
+  } catch (error) {
+    console.error(error);
+    res
+      .status(500)
+      .json({ success: false, message: "Failed to fetch user profile" });
+  }
+});
+
+// Endpoint to get user profile
+app.get("/profilebyaddress", async (req, res) => {
+  try {
+    const { address } = req.query;
+    // Make sure to replace 'USER_ADDRESS' with the user's Ethereum address
+    const userProfile = await contract.methods
+      .getUserProfileByAddress(address)
       .call({ from: userAddress2 });
 
-    res.json({ success: true, data: userProfile });
+    uName = userProfile[0];
+    displayName = userProfile[1];
+
+    res.status(200).json({
+      success: true,
+      data: { username: uName, displayName: displayName },
+    });
   } catch (error) {
     console.error(error);
     res

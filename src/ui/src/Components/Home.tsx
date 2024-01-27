@@ -1,8 +1,20 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Navigate, Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 
-const Home: React.FC = () => {
+interface HomeProps {
+  user: User | null; // Assuming User is a type representing user data
+}
+
+const Home: React.FC<HomeProps> = ({ user }) => {
+  useEffect(() => {
+    console.log("User:", user);
+  }, []);
+
+  if (!user) {
+    return <Navigate to="/signin" />;
+  }
+
   return (
     <div className="flex flex-col h-screen">
       {/* Navbar */}

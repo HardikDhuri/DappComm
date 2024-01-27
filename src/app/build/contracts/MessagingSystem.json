@@ -2437,7 +2437,7 @@
                 }
               ]
             },
-            "name": "array_length_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr",
+            "name": "array_length_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2523,7 +2523,7 @@
                 }
               ]
             },
-            "name": "array_storeLengthForEncoding_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "array_storeLengthForEncoding_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2606,7 +2606,7 @@
                 }
               ]
             },
-            "name": "array_dataslot_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr",
+            "name": "array_dataslot_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4000,7 +4000,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_Message_$300_memory_ptr_to_t_struct$_Message_$300_memory_ptr",
+            "name": "abi_encode_t_struct$_Message_$328_memory_ptr_to_t_struct$_Message_$328_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4048,7 +4048,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_Message_$300_memory_ptr_to_t_struct$_Message_$300_memory_ptr",
+                      "name": "abi_encode_t_struct$_Message_$328_memory_ptr_to_t_struct$_Message_$328_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "7402:81:3"
                     },
@@ -4065,7 +4065,7 @@
                 }
               ]
             },
-            "name": "abi_encodeUpdatedPos_t_struct$_Message_$300_memory_ptr_to_t_struct$_Message_$300_memory_ptr",
+            "name": "abi_encodeUpdatedPos_t_struct$_Message_$328_memory_ptr_to_t_struct$_Message_$328_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4132,7 +4132,7 @@
                 }
               ]
             },
-            "name": "array_nextElement_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr",
+            "name": "array_nextElement_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4169,7 +4169,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_length_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_length_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "7923:71:3"
                     },
@@ -4202,7 +4202,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "8017:97:3"
                     },
@@ -4297,7 +4297,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_dataslot_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_dataslot_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "8228:73:3"
                     },
@@ -4421,7 +4421,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "abi_encodeUpdatedPos_t_struct$_Message_$300_memory_ptr_to_t_struct$_Message_$300_memory_ptr",
+                            "name": "abi_encodeUpdatedPos_t_struct$_Message_$328_memory_ptr_to_t_struct$_Message_$328_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "8522:91:3"
                           },
@@ -4448,7 +4448,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "array_nextElement_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr",
+                            "name": "array_nextElement_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "8657:76:3"
                           },
@@ -4622,7 +4622,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "abi_encode_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4763,7 +4763,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "abi_encode_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "9142:141:3"
                     },
@@ -4780,7 +4780,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -9431,7 +9431,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() {\n        revert(0, 0)\n    }\n\n    function revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() {\n        revert(0, 0)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function finalize_allocation(memPtr, size) {\n        let newFreePtr := add(memPtr, round_up_to_mul_of_32(size))\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function allocate_memory(size) -> memPtr {\n        memPtr := allocate_unbounded()\n        finalize_allocation(memPtr, size)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := round_up_to_mul_of_32(length)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function copy_calldata_to_memory_with_cleanup(src, dst, length) {\n        calldatacopy(dst, src, length)\n        mstore(add(dst, length), 0)\n    }\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() }\n        copy_calldata_to_memory_with_cleanup(src, dst, length)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function validator_revert_t_bool(value) {\n        if iszero(eq(value, cleanup_t_bool(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_bool(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bool(value)\n    }\n\n    function abi_decode_tuple_t_addresst_string_memory_ptrt_bool(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 32))\n            if gt(offset, 0xffffffffffffffff) { revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() }\n\n            value1 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_bool(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function array_length_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function copy_memory_to_memory_with_cleanup(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        mstore(add(dst, length), 0)\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory_with_cleanup(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_bool_to_t_bool(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    // struct MessagingSystem.Message -> struct MessagingSystem.Message\n    function abi_encode_t_struct$_Message_$300_memory_ptr_to_t_struct$_Message_$300_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // sender\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // receiver\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // contentHash\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // isEncrypted\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_bool_to_t_bool(memberValue0, add(pos, 0x60))\n        }\n\n        {\n            // timestamp\n\n            let memberValue0 := mload(add(value, 0x80))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x80))\n        }\n\n        end := tail\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_Message_$300_memory_ptr_to_t_struct$_Message_$300_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_Message_$300_memory_ptr_to_t_struct$_Message_$300_memory_ptr(value0, pos)\n    }\n\n    function array_nextElement_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct MessagingSystem.Message[] -> struct MessagingSystem.Message[]\n    function abi_encode_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_Message_$300_memory_ptr_to_t_struct$_Message_$300_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_addresst_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory_with_cleanup(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address_t_address_t_string_memory_ptr_t_bool_t_uint256__to_t_address_t_address_t_string_memory_ptr_t_bool_t_uint256__fromStack_reversed(headStart , value4, value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 160)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_address_to_t_address_fromStack(value1,  add(headStart, 32))\n\n        mstore(add(headStart, 64), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value2,  tail)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value3,  add(headStart, 96))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value4,  add(headStart, 128))\n\n    }\n\n    function store_literal_in_memory_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b(memPtr) {\n\n        mstore(add(memPtr, 0), \"Cannot send a message to yoursel\")\n\n        mstore(add(memPtr, 32), \"f\")\n\n    }\n\n    function abi_encode_t_stringliteral_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 33)\n        store_literal_in_memory_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function array_dataslot_t_string_storage(ptr) -> data {\n        data := ptr\n\n        mstore(0, ptr)\n        data := keccak256(0, 0x20)\n\n    }\n\n    function divide_by_32_ceil(value) -> result {\n        result := div(add(value, 31), 32)\n    }\n\n    function shift_left_dynamic(bits, value) -> newValue {\n        newValue :=\n\n        shl(bits, value)\n\n    }\n\n    function update_byte_slice_dynamic32(value, shiftBytes, toInsert) -> result {\n        let shiftBits := mul(shiftBytes, 8)\n        let mask := shift_left_dynamic(shiftBits, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)\n        toInsert := shift_left_dynamic(shiftBits, toInsert)\n        value := and(value, not(mask))\n        result := or(value, and(toInsert, mask))\n    }\n\n    function identity(value) -> ret {\n        ret := value\n    }\n\n    function convert_t_uint256_to_t_uint256(value) -> converted {\n        converted := cleanup_t_uint256(identity(cleanup_t_uint256(value)))\n    }\n\n    function prepare_store_t_uint256(value) -> ret {\n        ret := value\n    }\n\n    function update_storage_value_t_uint256_to_t_uint256(slot, offset, value_0) {\n        let convertedValue_0 := convert_t_uint256_to_t_uint256(value_0)\n        sstore(slot, update_byte_slice_dynamic32(sload(slot), offset, prepare_store_t_uint256(convertedValue_0)))\n    }\n\n    function zero_value_for_split_t_uint256() -> ret {\n        ret := 0\n    }\n\n    function storage_set_to_zero_t_uint256(slot, offset) {\n        let zero_0 := zero_value_for_split_t_uint256()\n        update_storage_value_t_uint256_to_t_uint256(slot, offset, zero_0)\n    }\n\n    function clear_storage_range_t_bytes1(start, end) {\n        for {} lt(start, end) { start := add(start, 1) }\n        {\n            storage_set_to_zero_t_uint256(start, 0)\n        }\n    }\n\n    function clean_up_bytearray_end_slots_t_string_storage(array, len, startIndex) {\n\n        if gt(len, 31) {\n            let dataArea := array_dataslot_t_string_storage(array)\n            let deleteStart := add(dataArea, divide_by_32_ceil(startIndex))\n            // If we are clearing array to be short byte array, we want to clear only data starting from array data area.\n            if lt(startIndex, 32) { deleteStart := dataArea }\n            clear_storage_range_t_bytes1(deleteStart, add(dataArea, divide_by_32_ceil(len)))\n        }\n\n    }\n\n    function shift_right_unsigned_dynamic(bits, value) -> newValue {\n        newValue :=\n\n        shr(bits, value)\n\n    }\n\n    function mask_bytes_dynamic(data, bytes) -> result {\n        let mask := not(shift_right_unsigned_dynamic(mul(8, bytes), not(0)))\n        result := and(data, mask)\n    }\n    function extract_used_part_and_set_length_of_short_byte_array(data, len) -> used {\n        // we want to save only elements that are part of the array after resizing\n        // others should be set to zero\n        data := mask_bytes_dynamic(data, len)\n        used := or(data, mul(2, len))\n    }\n    function copy_byte_array_to_storage_from_t_string_memory_ptr_to_t_string_storage(slot, src) {\n\n        let newLen := array_length_t_string_memory_ptr(src)\n        // Make sure array length is sane\n        if gt(newLen, 0xffffffffffffffff) { panic_error_0x41() }\n\n        let oldLen := extract_byte_array_length(sload(slot))\n\n        // potentially truncate data\n        clean_up_bytearray_end_slots_t_string_storage(slot, oldLen, newLen)\n\n        let srcOffset := 0\n\n        srcOffset := 0x20\n\n        switch gt(newLen, 31)\n        case 1 {\n            let loopEnd := and(newLen, not(0x1f))\n\n            let dstPtr := array_dataslot_t_string_storage(slot)\n            let i := 0\n            for { } lt(i, loopEnd) { i := add(i, 0x20) } {\n                sstore(dstPtr, mload(add(src, srcOffset)))\n                dstPtr := add(dstPtr, 1)\n                srcOffset := add(srcOffset, 32)\n            }\n            if lt(loopEnd, newLen) {\n                let lastValue := mload(add(src, srcOffset))\n                sstore(dstPtr, mask_bytes_dynamic(lastValue, and(newLen, 0x1f)))\n            }\n            sstore(slot, add(mul(newLen, 2), 1))\n        }\n        default {\n            let value := 0\n            if newLen {\n                value := mload(add(src, srcOffset))\n            }\n            sstore(slot, extract_used_part_and_set_length_of_short_byte_array(value, newLen))\n        }\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr_t_bool_t_uint256__to_t_string_memory_ptr_t_bool_t_uint256__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n    }\n\n}\n",
+      "contents": "{\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() {\n        revert(0, 0)\n    }\n\n    function revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() {\n        revert(0, 0)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function finalize_allocation(memPtr, size) {\n        let newFreePtr := add(memPtr, round_up_to_mul_of_32(size))\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function allocate_memory(size) -> memPtr {\n        memPtr := allocate_unbounded()\n        finalize_allocation(memPtr, size)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := round_up_to_mul_of_32(length)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function copy_calldata_to_memory_with_cleanup(src, dst, length) {\n        calldatacopy(dst, src, length)\n        mstore(add(dst, length), 0)\n    }\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() }\n        copy_calldata_to_memory_with_cleanup(src, dst, length)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function validator_revert_t_bool(value) {\n        if iszero(eq(value, cleanup_t_bool(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_bool(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bool(value)\n    }\n\n    function abi_decode_tuple_t_addresst_string_memory_ptrt_bool(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 32))\n            if gt(offset, 0xffffffffffffffff) { revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() }\n\n            value1 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_bool(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function array_length_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function copy_memory_to_memory_with_cleanup(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        mstore(add(dst, length), 0)\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory_with_cleanup(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_bool_to_t_bool(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    // struct MessagingSystem.Message -> struct MessagingSystem.Message\n    function abi_encode_t_struct$_Message_$328_memory_ptr_to_t_struct$_Message_$328_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // sender\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // receiver\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // contentHash\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // isEncrypted\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_bool_to_t_bool(memberValue0, add(pos, 0x60))\n        }\n\n        {\n            // timestamp\n\n            let memberValue0 := mload(add(value, 0x80))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x80))\n        }\n\n        end := tail\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_Message_$328_memory_ptr_to_t_struct$_Message_$328_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_Message_$328_memory_ptr_to_t_struct$_Message_$328_memory_ptr(value0, pos)\n    }\n\n    function array_nextElement_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct MessagingSystem.Message[] -> struct MessagingSystem.Message[]\n    function abi_encode_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_Message_$328_memory_ptr_to_t_struct$_Message_$328_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_addresst_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory_with_cleanup(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address_t_address_t_string_memory_ptr_t_bool_t_uint256__to_t_address_t_address_t_string_memory_ptr_t_bool_t_uint256__fromStack_reversed(headStart , value4, value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 160)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_address_to_t_address_fromStack(value1,  add(headStart, 32))\n\n        mstore(add(headStart, 64), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value2,  tail)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value3,  add(headStart, 96))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value4,  add(headStart, 128))\n\n    }\n\n    function store_literal_in_memory_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b(memPtr) {\n\n        mstore(add(memPtr, 0), \"Cannot send a message to yoursel\")\n\n        mstore(add(memPtr, 32), \"f\")\n\n    }\n\n    function abi_encode_t_stringliteral_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 33)\n        store_literal_in_memory_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_b7cca35acf71fb7309c25239ed754a8abd2a00a3ab1d12136c0eb368e8b44e9b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function array_dataslot_t_string_storage(ptr) -> data {\n        data := ptr\n\n        mstore(0, ptr)\n        data := keccak256(0, 0x20)\n\n    }\n\n    function divide_by_32_ceil(value) -> result {\n        result := div(add(value, 31), 32)\n    }\n\n    function shift_left_dynamic(bits, value) -> newValue {\n        newValue :=\n\n        shl(bits, value)\n\n    }\n\n    function update_byte_slice_dynamic32(value, shiftBytes, toInsert) -> result {\n        let shiftBits := mul(shiftBytes, 8)\n        let mask := shift_left_dynamic(shiftBits, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)\n        toInsert := shift_left_dynamic(shiftBits, toInsert)\n        value := and(value, not(mask))\n        result := or(value, and(toInsert, mask))\n    }\n\n    function identity(value) -> ret {\n        ret := value\n    }\n\n    function convert_t_uint256_to_t_uint256(value) -> converted {\n        converted := cleanup_t_uint256(identity(cleanup_t_uint256(value)))\n    }\n\n    function prepare_store_t_uint256(value) -> ret {\n        ret := value\n    }\n\n    function update_storage_value_t_uint256_to_t_uint256(slot, offset, value_0) {\n        let convertedValue_0 := convert_t_uint256_to_t_uint256(value_0)\n        sstore(slot, update_byte_slice_dynamic32(sload(slot), offset, prepare_store_t_uint256(convertedValue_0)))\n    }\n\n    function zero_value_for_split_t_uint256() -> ret {\n        ret := 0\n    }\n\n    function storage_set_to_zero_t_uint256(slot, offset) {\n        let zero_0 := zero_value_for_split_t_uint256()\n        update_storage_value_t_uint256_to_t_uint256(slot, offset, zero_0)\n    }\n\n    function clear_storage_range_t_bytes1(start, end) {\n        for {} lt(start, end) { start := add(start, 1) }\n        {\n            storage_set_to_zero_t_uint256(start, 0)\n        }\n    }\n\n    function clean_up_bytearray_end_slots_t_string_storage(array, len, startIndex) {\n\n        if gt(len, 31) {\n            let dataArea := array_dataslot_t_string_storage(array)\n            let deleteStart := add(dataArea, divide_by_32_ceil(startIndex))\n            // If we are clearing array to be short byte array, we want to clear only data starting from array data area.\n            if lt(startIndex, 32) { deleteStart := dataArea }\n            clear_storage_range_t_bytes1(deleteStart, add(dataArea, divide_by_32_ceil(len)))\n        }\n\n    }\n\n    function shift_right_unsigned_dynamic(bits, value) -> newValue {\n        newValue :=\n\n        shr(bits, value)\n\n    }\n\n    function mask_bytes_dynamic(data, bytes) -> result {\n        let mask := not(shift_right_unsigned_dynamic(mul(8, bytes), not(0)))\n        result := and(data, mask)\n    }\n    function extract_used_part_and_set_length_of_short_byte_array(data, len) -> used {\n        // we want to save only elements that are part of the array after resizing\n        // others should be set to zero\n        data := mask_bytes_dynamic(data, len)\n        used := or(data, mul(2, len))\n    }\n    function copy_byte_array_to_storage_from_t_string_memory_ptr_to_t_string_storage(slot, src) {\n\n        let newLen := array_length_t_string_memory_ptr(src)\n        // Make sure array length is sane\n        if gt(newLen, 0xffffffffffffffff) { panic_error_0x41() }\n\n        let oldLen := extract_byte_array_length(sload(slot))\n\n        // potentially truncate data\n        clean_up_bytearray_end_slots_t_string_storage(slot, oldLen, newLen)\n\n        let srcOffset := 0\n\n        srcOffset := 0x20\n\n        switch gt(newLen, 31)\n        case 1 {\n            let loopEnd := and(newLen, not(0x1f))\n\n            let dstPtr := array_dataslot_t_string_storage(slot)\n            let i := 0\n            for { } lt(i, loopEnd) { i := add(i, 0x20) } {\n                sstore(dstPtr, mload(add(src, srcOffset)))\n                dstPtr := add(dstPtr, 1)\n                srcOffset := add(srcOffset, 32)\n            }\n            if lt(loopEnd, newLen) {\n                let lastValue := mload(add(src, srcOffset))\n                sstore(dstPtr, mask_bytes_dynamic(lastValue, and(newLen, 0x1f)))\n            }\n            sstore(slot, add(mul(newLen, 2), 1))\n        }\n        default {\n            let value := 0\n            if newLen {\n                value := mload(add(src, srcOffset))\n            }\n            sstore(slot, extract_used_part_and_set_length_of_short_byte_array(value, newLen))\n        }\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr_t_bool_t_uint256__to_t_string_memory_ptr_t_bool_t_uint256__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n    }\n\n}\n",
       "id": 3,
       "language": "Yul",
       "name": "#utility.yul"
@@ -9440,20 +9440,20 @@
   "sourceMap": "184:1930:1:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "184:1930:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1089:749;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;1996:116;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;716:49;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;;;;;:::i;:::-;;;;;;;;1089:749;1217:9;1203:23;;:10;:23;;;1195:69;;;;;;;;;;;;:::i;:::-;;;;;;;;;1307:25;1335:202;;;;;;;;1365:10;1335:202;;;;;;1399:9;1335:202;;;;;;1435:12;1335:202;;;;1474:12;1335:202;;;;;;1511:15;1335:202;;;1307:230;;1623:12;:24;1636:10;1623:24;;;;;;;;;;;;;;;1653:10;1623:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1674:12;:23;1687:9;1674:23;;;;;;;;;;;;;;;1703:10;1674:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1776:9;1752:79;;1764:10;1752:79;;;1787:12;1801;1815:15;1752:79;;;;;;;;:::i;:::-;;;;;;;;1185:653;1089:749;;;:::o;1996:116::-;2046:16;2081:12;:24;2094:10;2081:24;;;;;;;;;;;;;;;2074:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1996:116;:::o;716:49::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;7:75:3:-;40:6;73:2;67:9;57:19;;7:75;:::o;88:117::-;197:1;194;187:12;211:117;320:1;317;310:12;334:126;371:7;411:42;404:5;400:54;389:65;;334:126;;;:::o;466:96::-;503:7;532:24;550:5;532:24;:::i;:::-;521:35;;466:96;;;:::o;568:122::-;641:24;659:5;641:24;:::i;:::-;634:5;631:35;621:63;;680:1;677;670:12;621:63;568:122;:::o;696:139::-;742:5;780:6;767:20;758:29;;796:33;823:5;796:33;:::i;:::-;696:139;;;;:::o;841:117::-;950:1;947;940:12;964:117;1073:1;1070;1063:12;1087:102;1128:6;1179:2;1175:7;1170:2;1163:5;1159:14;1155:28;1145:38;;1087:102;;;:::o;1195:180::-;1243:77;1240:1;1233:88;1340:4;1337:1;1330:15;1364:4;1361:1;1354:15;1381:281;1464:27;1486:4;1464:27;:::i;:::-;1456:6;1452:40;1594:6;1582:10;1579:22;1558:18;1546:10;1543:34;1540:62;1537:88;;;1605:18;;:::i;:::-;1537:88;1645:10;1641:2;1634:22;1424:238;1381:281;;:::o;1668:129::-;1702:6;1729:20;;:::i;:::-;1719:30;;1758:33;1786:4;1778:6;1758:33;:::i;:::-;1668:129;;;:::o;1803:308::-;1865:4;1955:18;1947:6;1944:30;1941:56;;;1977:18;;:::i;:::-;1941:56;2015:29;2037:6;2015:29;:::i;:::-;2007:37;;2099:4;2093;2089:15;2081:23;;1803:308;;;:::o;2117:146::-;2214:6;2209:3;2204;2191:30;2255:1;2246:6;2241:3;2237:16;2230:27;2117:146;;;:::o;2269:425::-;2347:5;2372:66;2388:49;2430:6;2388:49;:::i;:::-;2372:66;:::i;:::-;2363:75;;2461:6;2454:5;2447:21;2499:4;2492:5;2488:16;2537:3;2528:6;2523:3;2519:16;2516:25;2513:112;;;2544:79;;:::i;:::-;2513:112;2634:54;2681:6;2676:3;2671;2634:54;:::i;:::-;2353:341;2269:425;;;;;:::o;2714:340::-;2770:5;2819:3;2812:4;2804:6;2800:17;2796:27;2786:122;;2827:79;;:::i;:::-;2786:122;2944:6;2931:20;2969:79;3044:3;3036:6;3029:4;3021:6;3017:17;2969:79;:::i;:::-;2960:88;;2776:278;2714:340;;;;:::o;3060:90::-;3094:7;3137:5;3130:13;3123:21;3112:32;;3060:90;;;:::o;3156:116::-;3226:21;3241:5;3226:21;:::i;:::-;3219:5;3216:32;3206:60;;3262:1;3259;3252:12;3206:60;3156:116;:::o;3278:133::-;3321:5;3359:6;3346:20;3337:29;;3375:30;3399:5;3375:30;:::i;:::-;3278:133;;;;:::o;3417:793::-;3501:6;3509;3517;3566:2;3554:9;3545:7;3541:23;3537:32;3534:119;;;3572:79;;:::i;:::-;3534:119;3692:1;3717:53;3762:7;3753:6;3742:9;3738:22;3717:53;:::i;:::-;3707:63;;3663:117;3847:2;3836:9;3832:18;3819:32;3878:18;3870:6;3867:30;3864:117;;;3900:79;;:::i;:::-;3864:117;4005:63;4060:7;4051:6;4040:9;4036:22;4005:63;:::i;:::-;3995:73;;3790:288;4117:2;4143:50;4185:7;4176:6;4165:9;4161:22;4143:50;:::i;:::-;4133:60;;4088:115;3417:793;;;;;:::o;4216:138::-;4307:6;4341:5;4335:12;4325:22;;4216:138;;;:::o;4360:208::-;4483:11;4517:6;4512:3;4505:19;4557:4;4552:3;4548:14;4533:29;;4360:208;;;;:::o;4574:156::-;4665:4;4688:3;4680:11;;4718:4;4713:3;4709:14;4701:22;;4574:156;;;:::o;4736:108::-;4813:24;4831:5;4813:24;:::i;:::-;4808:3;4801:37;4736:108;;:::o;4850:99::-;4902:6;4936:5;4930:12;4920:22;;4850:99;;;:::o;4955:159::-;5029:11;5063:6;5058:3;5051:19;5103:4;5098:3;5094:14;5079:29;;4955:159;;;;:::o;5120:246::-;5201:1;5211:113;5225:6;5222:1;5219:13;5211:113;;;5310:1;5305:3;5301:11;5295:18;5291:1;5286:3;5282:11;5275:39;5247:2;5244:1;5240:10;5235:15;;5211:113;;;5358:1;5349:6;5344:3;5340:16;5333:27;5182:184;5120:246;;;:::o;5372:357::-;5450:3;5478:39;5511:5;5478:39;:::i;:::-;5533:61;5587:6;5582:3;5533:61;:::i;:::-;5526:68;;5603:65;5661:6;5656:3;5649:4;5642:5;5638:16;5603:65;:::i;:::-;5693:29;5715:6;5693:29;:::i;:::-;5688:3;5684:39;5677:46;;5454:275;5372:357;;;;:::o;5735:99::-;5806:21;5821:5;5806:21;:::i;:::-;5801:3;5794:34;5735:99;;:::o;5840:77::-;5877:7;5906:5;5895:16;;5840:77;;;:::o;5923:108::-;6000:24;6018:5;6000:24;:::i;:::-;5995:3;5988:37;5923:108;;:::o;6109:1135::-;6216:3;6252:4;6247:3;6243:14;6341:4;6334:5;6330:16;6324:23;6360:63;6417:4;6412:3;6408:14;6394:12;6360:63;:::i;:::-;6267:166;6519:4;6512:5;6508:16;6502:23;6538:63;6595:4;6590:3;6586:14;6572:12;6538:63;:::i;:::-;6443:168;6700:4;6693:5;6689:16;6683:23;6753:3;6747:4;6743:14;6736:4;6731:3;6727:14;6720:38;6779:73;6847:4;6833:12;6779:73;:::i;:::-;6771:81;;6621:242;6952:4;6945:5;6941:16;6935:23;6971:57;7022:4;7017:3;7013:14;6999:12;6971:57;:::i;:::-;6873:165;7125:4;7118:5;7114:16;7108:23;7144:63;7201:4;7196:3;7192:14;7178:12;7144:63;:::i;:::-;7048:169;7234:4;7227:11;;6221:1023;6109:1135;;;;:::o;7250:252::-;7367:10;7402:94;7492:3;7484:6;7402:94;:::i;:::-;7388:108;;7250:252;;;;:::o;7508:137::-;7602:4;7634;7629:3;7625:14;7617:22;;7508:137;;;:::o;7727:1103::-;7894:3;7923:78;7995:5;7923:78;:::i;:::-;8017:110;8120:6;8115:3;8017:110;:::i;:::-;8010:117;;8153:3;8198:4;8190:6;8186:17;8181:3;8177:27;8228:80;8302:5;8228:80;:::i;:::-;8331:7;8362:1;8347:438;8372:6;8369:1;8366:13;8347:438;;;8443:9;8437:4;8433:20;8428:3;8421:33;8494:6;8488:13;8522:112;8629:4;8614:13;8522:112;:::i;:::-;8514:120;;8657:84;8734:6;8657:84;:::i;:::-;8647:94;;8770:4;8765:3;8761:14;8754:21;;8407:378;8394:1;8391;8387:9;8382:14;;8347:438;;;8351:14;8801:4;8794:11;;8821:3;8814:10;;7899:931;;;;;7727:1103;;;;:::o;8836:469::-;9027:4;9065:2;9054:9;9050:18;9042:26;;9114:9;9108:4;9104:20;9100:1;9089:9;9085:17;9078:47;9142:156;9293:4;9284:6;9142:156;:::i;:::-;9134:164;;8836:469;;;;:::o;9311:122::-;9384:24;9402:5;9384:24;:::i;:::-;9377:5;9374:35;9364:63;;9423:1;9420;9413:12;9364:63;9311:122;:::o;9439:139::-;9485:5;9523:6;9510:20;9501:29;;9539:33;9566:5;9539:33;:::i;:::-;9439:139;;;;:::o;9584:474::-;9652:6;9660;9709:2;9697:9;9688:7;9684:23;9680:32;9677:119;;;9715:79;;:::i;:::-;9677:119;9835:1;9860:53;9905:7;9896:6;9885:9;9881:22;9860:53;:::i;:::-;9850:63;;9806:117;9962:2;9988:53;10033:7;10024:6;10013:9;10009:22;9988:53;:::i;:::-;9978:63;;9933:118;9584:474;;;;;:::o;10064:118::-;10151:24;10169:5;10151:24;:::i;:::-;10146:3;10139:37;10064:118;;:::o;10188:169::-;10272:11;10306:6;10301:3;10294:19;10346:4;10341:3;10337:14;10322:29;;10188:169;;;;:::o;10363:377::-;10451:3;10479:39;10512:5;10479:39;:::i;:::-;10534:71;10598:6;10593:3;10534:71;:::i;:::-;10527:78;;10614:65;10672:6;10667:3;10660:4;10653:5;10649:16;10614:65;:::i;:::-;10704:29;10726:6;10704:29;:::i;:::-;10699:3;10695:39;10688:46;;10455:285;10363:377;;;;:::o;10746:109::-;10827:21;10842:5;10827:21;:::i;:::-;10822:3;10815:34;10746:109;;:::o;10861:118::-;10948:24;10966:5;10948:24;:::i;:::-;10943:3;10936:37;10861:118;;:::o;10985:743::-;11204:4;11242:3;11231:9;11227:19;11219:27;;11256:71;11324:1;11313:9;11309:17;11300:6;11256:71;:::i;:::-;11337:72;11405:2;11394:9;11390:18;11381:6;11337:72;:::i;:::-;11456:9;11450:4;11446:20;11441:2;11430:9;11426:18;11419:48;11484:78;11557:4;11548:6;11484:78;:::i;:::-;11476:86;;11572:66;11634:2;11623:9;11619:18;11610:6;11572:66;:::i;:::-;11648:73;11716:3;11705:9;11701:19;11692:6;11648:73;:::i;:::-;10985:743;;;;;;;;:::o;11734:220::-;11874:34;11870:1;11862:6;11858:14;11851:58;11943:3;11938:2;11930:6;11926:15;11919:28;11734:220;:::o;11960:366::-;12102:3;12123:67;12187:2;12182:3;12123:67;:::i;:::-;12116:74;;12199:93;12288:3;12199:93;:::i;:::-;12317:2;12312:3;12308:12;12301:19;;11960:366;;;:::o;12332:419::-;12498:4;12536:2;12525:9;12521:18;12513:26;;12585:9;12579:4;12575:20;12571:1;12560:9;12556:17;12549:47;12613:131;12739:4;12613:131;:::i;:::-;12605:139;;12332:419;;;:::o;12757:180::-;12805:77;12802:1;12795:88;12902:4;12899:1;12892:15;12926:4;12923:1;12916:15;12943:320;12987:6;13024:1;13018:4;13014:12;13004:22;;13071:1;13065:4;13061:12;13092:18;13082:81;;13148:4;13140:6;13136:17;13126:27;;13082:81;13210:2;13202:6;13199:14;13179:18;13176:38;13173:84;;13229:18;;:::i;:::-;13173:84;12994:269;12943:320;;;:::o;13269:141::-;13318:4;13341:3;13333:11;;13364:3;13361:1;13354:14;13398:4;13395:1;13385:18;13377:26;;13269:141;;;:::o;13416:93::-;13453:6;13500:2;13495;13488:5;13484:14;13480:23;13470:33;;13416:93;;;:::o;13515:107::-;13559:8;13609:5;13603:4;13599:16;13578:37;;13515:107;;;;:::o;13628:393::-;13697:6;13747:1;13735:10;13731:18;13770:97;13800:66;13789:9;13770:97;:::i;:::-;13888:39;13918:8;13907:9;13888:39;:::i;:::-;13876:51;;13960:4;13956:9;13949:5;13945:21;13936:30;;14009:4;13999:8;13995:19;13988:5;13985:30;13975:40;;13704:317;;13628:393;;;;;:::o;14027:60::-;14055:3;14076:5;14069:12;;14027:60;;;:::o;14093:142::-;14143:9;14176:53;14194:34;14203:24;14221:5;14203:24;:::i;:::-;14194:34;:::i;:::-;14176:53;:::i;:::-;14163:66;;14093:142;;;:::o;14241:75::-;14284:3;14305:5;14298:12;;14241:75;;;:::o;14322:269::-;14432:39;14463:7;14432:39;:::i;:::-;14493:91;14542:41;14566:16;14542:41;:::i;:::-;14534:6;14527:4;14521:11;14493:91;:::i;:::-;14487:4;14480:105;14398:193;14322:269;;;:::o;14597:73::-;14642:3;14597:73;:::o;14676:189::-;14753:32;;:::i;:::-;14794:65;14852:6;14844;14838:4;14794:65;:::i;:::-;14729:136;14676:189;;:::o;14871:186::-;14931:120;14948:3;14941:5;14938:14;14931:120;;;15002:39;15039:1;15032:5;15002:39;:::i;:::-;14975:1;14968:5;14964:13;14955:22;;14931:120;;;14871:186;;:::o;15063:543::-;15164:2;15159:3;15156:11;15153:446;;;15198:38;15230:5;15198:38;:::i;:::-;15282:29;15300:10;15282:29;:::i;:::-;15272:8;15268:44;15465:2;15453:10;15450:18;15447:49;;;15486:8;15471:23;;15447:49;15509:80;15565:22;15583:3;15565:22;:::i;:::-;15555:8;15551:37;15538:11;15509:80;:::i;:::-;15168:431;;15153:446;15063:543;;;:::o;15612:117::-;15666:8;15716:5;15710:4;15706:16;15685:37;;15612:117;;;;:::o;15735:169::-;15779:6;15812:51;15860:1;15856:6;15848:5;15845:1;15841:13;15812:51;:::i;:::-;15808:56;15893:4;15887;15883:15;15873:25;;15786:118;15735:169;;;;:::o;15909:295::-;15985:4;16131:29;16156:3;16150:4;16131:29;:::i;:::-;16123:37;;16193:3;16190:1;16186:11;16180:4;16177:21;16169:29;;15909:295;;;;:::o;16209:1395::-;16326:37;16359:3;16326:37;:::i;:::-;16428:18;16420:6;16417:30;16414:56;;;16450:18;;:::i;:::-;16414:56;16494:38;16526:4;16520:11;16494:38;:::i;:::-;16579:67;16639:6;16631;16625:4;16579:67;:::i;:::-;16673:1;16697:4;16684:17;;16729:2;16721:6;16718:14;16746:1;16741:618;;;;17403:1;17420:6;17417:77;;;17469:9;17464:3;17460:19;17454:26;17445:35;;17417:77;17520:67;17580:6;17573:5;17520:67;:::i;:::-;17514:4;17507:81;17376:222;16711:887;;16741:618;16793:4;16789:9;16781:6;16777:22;16827:37;16859:4;16827:37;:::i;:::-;16886:1;16900:208;16914:7;16911:1;16908:14;16900:208;;;16993:9;16988:3;16984:19;16978:26;16970:6;16963:42;17044:1;17036:6;17032:14;17022:24;;17091:2;17080:9;17076:18;17063:31;;16937:4;16934:1;16930:12;16925:17;;16900:208;;;17136:6;17127:7;17124:19;17121:179;;;17194:9;17189:3;17185:19;17179:26;17237:48;17279:4;17271:6;17267:17;17256:9;17237:48;:::i;:::-;17229:6;17222:64;17144:156;17121:179;17346:1;17342;17334:6;17330:14;17326:22;17320:4;17313:36;16748:611;;;16711:887;;16301:1303;;;16209:1395;;:::o;17610:521::-;17773:4;17811:2;17800:9;17796:18;17788:26;;17860:9;17854:4;17850:20;17846:1;17835:9;17831:17;17824:47;17888:78;17961:4;17952:6;17888:78;:::i;:::-;17880:86;;17976:66;18038:2;18027:9;18023:18;18014:6;17976:66;:::i;:::-;18052:72;18120:2;18109:9;18105:18;18096:6;18052:72;:::i;:::-;17610:521;;;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.19;\n\n/**\n * @title MessagingSystem\n * @dev A smart contract for facilitating secure and decentralized messaging between users.\n */\ncontract MessagingSystem {\n    // Struct to represent a message\n    struct Message {\n        address sender;\n        address receiver;\n        string contentHash; // IPFS hash or any off-chain storage reference\n        bool isEncrypted; // Indicator for encryption (if needed)\n        uint256 timestamp;\n    }\n\n    // Event emitted when a new message is sent\n    event MessageSent(address indexed sender, address indexed receiver, string contentHash, bool isEncrypted, uint256 timestamp);\n\n    // Mapping to store user messages\n    mapping(address => Message[]) public userMessages;\n\n    /**\n     * @dev Sends a message to another user.\n     * @param _receiver The address of the user who will receive the message.\n     * @param _contentHash The IPFS hash or off-chain storage reference of the message content.\n     * @param _isEncrypted A boolean indicating whether the message is encrypted.\n     */\n    function sendMessage(address _receiver, string memory _contentHash, bool _isEncrypted) external {\n        require(msg.sender != _receiver, \"Cannot send a message to yourself\");\n\n        // Create a new message\n        Message memory newMessage = Message({\n            sender: msg.sender,\n            receiver: _receiver,\n            contentHash: _contentHash,\n            isEncrypted: _isEncrypted,\n            timestamp: block.timestamp\n        });\n\n        // Add the message to both sender's and receiver's message history\n        userMessages[msg.sender].push(newMessage);\n        userMessages[_receiver].push(newMessage);\n\n        // Emit event\n        emit MessageSent(msg.sender, _receiver, _contentHash, _isEncrypted, block.timestamp);\n    }\n\n    /**\n     * @dev Retrieves the messages of the calling user.\n     * @return An array of Message structures representing the user's messages.\n     */\n    function getUserMessages() external view returns (Message[] memory) {\n        return userMessages[msg.sender];\n    }\n}\n",
-  "sourcePath": "/workspaces/DappComm/src/app/contracts/MessagingSystem.sol",
+  "sourcePath": "/home/hardik/code/node/DappComm/src/app/contracts/MessagingSystem.sol",
   "ast": {
     "absolutePath": "project:/contracts/MessagingSystem.sol",
     "exportedSymbols": {
       "MessagingSystem": [
-        390
+        418
       ]
     },
-    "id": 391,
+    "id": 419,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 288,
+        "id": 316,
         "literals": [
           "solidity",
           "^",
@@ -9470,15 +9470,15 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 289,
+          "id": 317,
           "nodeType": "StructuredDocumentation",
           "src": "58:125:1",
           "text": " @title MessagingSystem\n @dev A smart contract for facilitating secure and decentralized messaging between users."
         },
         "fullyImplemented": true,
-        "id": 390,
+        "id": 418,
         "linearizedBaseContracts": [
-          390
+          418
         ],
         "name": "MessagingSystem",
         "nameLocation": "193:15:1",
@@ -9486,16 +9486,16 @@
         "nodes": [
           {
             "canonicalName": "MessagingSystem.Message",
-            "id": 300,
+            "id": 328,
             "members": [
               {
                 "constant": false,
-                "id": 291,
+                "id": 319,
                 "mutability": "mutable",
                 "name": "sender",
                 "nameLocation": "285:6:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 300,
+                "scope": 328,
                 "src": "277:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -9504,7 +9504,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 290,
+                  "id": 318,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "277:7:1",
@@ -9518,12 +9518,12 @@
               },
               {
                 "constant": false,
-                "id": 293,
+                "id": 321,
                 "mutability": "mutable",
                 "name": "receiver",
                 "nameLocation": "309:8:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 300,
+                "scope": 328,
                 "src": "301:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -9532,7 +9532,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 292,
+                  "id": 320,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "301:7:1",
@@ -9546,12 +9546,12 @@
               },
               {
                 "constant": false,
-                "id": 295,
+                "id": 323,
                 "mutability": "mutable",
                 "name": "contentHash",
                 "nameLocation": "334:11:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 300,
+                "scope": 328,
                 "src": "327:18:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -9560,7 +9560,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 294,
+                  "id": 322,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "327:6:1",
@@ -9573,12 +9573,12 @@
               },
               {
                 "constant": false,
-                "id": 297,
+                "id": 325,
                 "mutability": "mutable",
                 "name": "isEncrypted",
                 "nameLocation": "408:11:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 300,
+                "scope": 328,
                 "src": "403:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -9587,7 +9587,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 296,
+                  "id": 324,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "403:4:1",
@@ -9600,12 +9600,12 @@
               },
               {
                 "constant": false,
-                "id": 299,
+                "id": 327,
                 "mutability": "mutable",
                 "name": "timestamp",
                 "nameLocation": "477:9:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 300,
+                "scope": 328,
                 "src": "469:17:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -9614,7 +9614,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 298,
+                  "id": 326,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "469:7:1",
@@ -9629,30 +9629,30 @@
             "name": "Message",
             "nameLocation": "259:7:1",
             "nodeType": "StructDefinition",
-            "scope": 390,
+            "scope": 418,
             "src": "252:241:1",
             "visibility": "public"
           },
           {
             "anonymous": false,
             "eventSelector": "9709b54d7685400825aee4e8e458e80589e25631459d0d33cdebd05859d99bf4",
-            "id": 312,
+            "id": 340,
             "name": "MessageSent",
             "nameLocation": "553:11:1",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 311,
+              "id": 339,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 302,
+                  "id": 330,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "sender",
                   "nameLocation": "581:6:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 312,
+                  "scope": 340,
                   "src": "565:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9661,7 +9661,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 301,
+                    "id": 329,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "565:7:1",
@@ -9675,13 +9675,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 304,
+                  "id": 332,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "receiver",
                   "nameLocation": "605:8:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 312,
+                  "scope": 340,
                   "src": "589:24:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9690,7 +9690,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 303,
+                    "id": 331,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "589:7:1",
@@ -9704,13 +9704,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 306,
+                  "id": 334,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "contentHash",
                   "nameLocation": "622:11:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 312,
+                  "scope": 340,
                   "src": "615:18:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9719,7 +9719,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 305,
+                    "id": 333,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "615:6:1",
@@ -9732,13 +9732,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 308,
+                  "id": 336,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "isEncrypted",
                   "nameLocation": "640:11:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 312,
+                  "scope": 340,
                   "src": "635:16:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9747,7 +9747,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 307,
+                    "id": 335,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "635:4:1",
@@ -9760,13 +9760,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 310,
+                  "id": 338,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "timestamp",
                   "nameLocation": "661:9:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 312,
+                  "scope": 340,
                   "src": "653:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9775,7 +9775,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 309,
+                    "id": 337,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "653:7:1",
@@ -9794,25 +9794,25 @@
           {
             "constant": false,
             "functionSelector": "9428cda3",
-            "id": 318,
+            "id": 346,
             "mutability": "mutable",
             "name": "userMessages",
             "nameLocation": "753:12:1",
             "nodeType": "VariableDeclaration",
-            "scope": 390,
+            "scope": 418,
             "src": "716:49:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$300_storage_$dyn_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$328_storage_$dyn_storage_$",
               "typeString": "mapping(address => struct MessagingSystem.Message[])"
             },
             "typeName": {
-              "id": 317,
+              "id": 345,
               "keyName": "",
               "keyNameLocation": "-1:-1:-1",
               "keyType": {
-                "id": 313,
+                "id": 341,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "724:7:1",
@@ -9824,37 +9824,37 @@
               "nodeType": "Mapping",
               "src": "716:29:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$300_storage_$dyn_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$328_storage_$dyn_storage_$",
                 "typeString": "mapping(address => struct MessagingSystem.Message[])"
               },
               "valueName": "",
               "valueNameLocation": "-1:-1:-1",
               "valueType": {
                 "baseType": {
-                  "id": 315,
+                  "id": 343,
                   "nodeType": "UserDefinedTypeName",
                   "pathNode": {
-                    "id": 314,
+                    "id": 342,
                     "name": "Message",
                     "nameLocations": [
                       "735:7:1"
                     ],
                     "nodeType": "IdentifierPath",
-                    "referencedDeclaration": 300,
+                    "referencedDeclaration": 328,
                     "src": "735:7:1"
                   },
-                  "referencedDeclaration": 300,
+                  "referencedDeclaration": 328,
                   "src": "735:7:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Message_$300_storage_ptr",
+                    "typeIdentifier": "t_struct$_Message_$328_storage_ptr",
                     "typeString": "struct MessagingSystem.Message"
                   }
                 },
-                "id": 316,
+                "id": 344,
                 "nodeType": "ArrayTypeName",
                 "src": "735:9:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Message_$300_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Message_$328_storage_$dyn_storage_ptr",
                   "typeString": "struct MessagingSystem.Message[]"
                 }
               }
@@ -9863,7 +9863,7 @@
           },
           {
             "body": {
-              "id": 374,
+              "id": 402,
               "nodeType": "Block",
               "src": "1185:653:1",
               "statements": [
@@ -9875,14 +9875,14 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 332,
+                        "id": 360,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 329,
+                            "id": 357,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -9893,7 +9893,7 @@
                               "typeString": "msg"
                             }
                           },
-                          "id": 330,
+                          "id": 358,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -9910,11 +9910,11 @@
                         "nodeType": "BinaryOperation",
                         "operator": "!=",
                         "rightExpression": {
-                          "id": 331,
+                          "id": 359,
                           "name": "_receiver",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 321,
+                          "referencedDeclaration": 349,
                           "src": "1217:9:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -9929,7 +9929,7 @@
                       },
                       {
                         "hexValue": "43616e6e6f742073656e642061206d65737361676520746f20796f757273656c66",
-                        "id": 333,
+                        "id": 361,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -9955,7 +9955,7 @@
                           "typeString": "literal_string \"Cannot send a message to yourself\""
                         }
                       ],
-                      "id": 328,
+                      "id": 356,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -9969,7 +9969,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 334,
+                    "id": 362,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9985,59 +9985,59 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 335,
+                  "id": 363,
                   "nodeType": "ExpressionStatement",
                   "src": "1195:69:1"
                 },
                 {
                   "assignments": [
-                    338
+                    366
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 338,
+                      "id": 366,
                       "mutability": "mutable",
                       "name": "newMessage",
                       "nameLocation": "1322:10:1",
                       "nodeType": "VariableDeclaration",
-                      "scope": 374,
+                      "scope": 402,
                       "src": "1307:25:1",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Message_$300_memory_ptr",
+                        "typeIdentifier": "t_struct$_Message_$328_memory_ptr",
                         "typeString": "struct MessagingSystem.Message"
                       },
                       "typeName": {
-                        "id": 337,
+                        "id": 365,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 336,
+                          "id": 364,
                           "name": "Message",
                           "nameLocations": [
                             "1307:7:1"
                           ],
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 300,
+                          "referencedDeclaration": 328,
                           "src": "1307:7:1"
                         },
-                        "referencedDeclaration": 300,
+                        "referencedDeclaration": 328,
                         "src": "1307:7:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Message_$300_storage_ptr",
+                          "typeIdentifier": "t_struct$_Message_$328_storage_ptr",
                           "typeString": "struct MessagingSystem.Message"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 348,
+                  "id": 376,
                   "initialValue": {
                     "arguments": [
                       {
                         "expression": {
-                          "id": 340,
+                          "id": 368,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -10048,7 +10048,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 341,
+                        "id": 369,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -10063,11 +10063,11 @@
                         }
                       },
                       {
-                        "id": 342,
+                        "id": 370,
                         "name": "_receiver",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 321,
+                        "referencedDeclaration": 349,
                         "src": "1399:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -10075,11 +10075,11 @@
                         }
                       },
                       {
-                        "id": 343,
+                        "id": 371,
                         "name": "_contentHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 323,
+                        "referencedDeclaration": 351,
                         "src": "1435:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -10087,11 +10087,11 @@
                         }
                       },
                       {
-                        "id": 344,
+                        "id": 372,
                         "name": "_isEncrypted",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 325,
+                        "referencedDeclaration": 353,
                         "src": "1474:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -10100,7 +10100,7 @@
                       },
                       {
                         "expression": {
-                          "id": 345,
+                          "id": 373,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -10111,7 +10111,7 @@
                             "typeString": "block"
                           }
                         },
-                        "id": 346,
+                        "id": 374,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -10149,18 +10149,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 339,
+                      "id": 367,
                       "name": "Message",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 300,
+                      "referencedDeclaration": 328,
                       "src": "1335:7:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Message_$300_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Message_$328_storage_ptr_$",
                         "typeString": "type(struct MessagingSystem.Message storage pointer)"
                       }
                     },
-                    "id": 347,
+                    "id": 375,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10184,7 +10184,7 @@
                     "src": "1335:202:1",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Message_$300_memory_ptr",
+                      "typeIdentifier": "t_struct$_Message_$328_memory_ptr",
                       "typeString": "struct MessagingSystem.Message memory"
                     }
                   },
@@ -10195,14 +10195,14 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 354,
+                        "id": 382,
                         "name": "newMessage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 338,
+                        "referencedDeclaration": 366,
                         "src": "1653:10:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Message_$300_memory_ptr",
+                          "typeIdentifier": "t_struct$_Message_$328_memory_ptr",
                           "typeString": "struct MessagingSystem.Message memory"
                         }
                       }
@@ -10210,27 +10210,27 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Message_$300_memory_ptr",
+                          "typeIdentifier": "t_struct$_Message_$328_memory_ptr",
                           "typeString": "struct MessagingSystem.Message memory"
                         }
                       ],
                       "expression": {
                         "baseExpression": {
-                          "id": 349,
+                          "id": 377,
                           "name": "userMessages",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 318,
+                          "referencedDeclaration": 346,
                           "src": "1623:12:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$300_storage_$dyn_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$328_storage_$dyn_storage_$",
                             "typeString": "mapping(address => struct MessagingSystem.Message storage ref[] storage ref)"
                           }
                         },
-                        "id": 352,
+                        "id": 380,
                         "indexExpression": {
                           "expression": {
-                            "id": 350,
+                            "id": 378,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -10241,7 +10241,7 @@
                               "typeString": "msg"
                             }
                           },
-                          "id": 351,
+                          "id": 379,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -10262,11 +10262,11 @@
                         "nodeType": "IndexAccess",
                         "src": "1623:24:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Message_$300_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Message_$328_storage_$dyn_storage",
                           "typeString": "struct MessagingSystem.Message storage ref[] storage ref"
                         }
                       },
-                      "id": 353,
+                      "id": 381,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -10276,11 +10276,11 @@
                       "nodeType": "MemberAccess",
                       "src": "1623:29:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Message_$300_storage_$dyn_storage_ptr_$_t_struct$_Message_$300_storage_$returns$__$attached_to$_t_array$_t_struct$_Message_$300_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Message_$328_storage_$dyn_storage_ptr_$_t_struct$_Message_$328_storage_$returns$__$attached_to$_t_array$_t_struct$_Message_$328_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct MessagingSystem.Message storage ref[] storage pointer,struct MessagingSystem.Message storage ref)"
                       }
                     },
-                    "id": 355,
+                    "id": 383,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10296,7 +10296,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 356,
+                  "id": 384,
                   "nodeType": "ExpressionStatement",
                   "src": "1623:41:1"
                 },
@@ -10304,14 +10304,14 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 361,
+                        "id": 389,
                         "name": "newMessage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 338,
+                        "referencedDeclaration": 366,
                         "src": "1703:10:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Message_$300_memory_ptr",
+                          "typeIdentifier": "t_struct$_Message_$328_memory_ptr",
                           "typeString": "struct MessagingSystem.Message memory"
                         }
                       }
@@ -10319,30 +10319,30 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Message_$300_memory_ptr",
+                          "typeIdentifier": "t_struct$_Message_$328_memory_ptr",
                           "typeString": "struct MessagingSystem.Message memory"
                         }
                       ],
                       "expression": {
                         "baseExpression": {
-                          "id": 357,
+                          "id": 385,
                           "name": "userMessages",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 318,
+                          "referencedDeclaration": 346,
                           "src": "1674:12:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$300_storage_$dyn_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$328_storage_$dyn_storage_$",
                             "typeString": "mapping(address => struct MessagingSystem.Message storage ref[] storage ref)"
                           }
                         },
-                        "id": 359,
+                        "id": 387,
                         "indexExpression": {
-                          "id": 358,
+                          "id": 386,
                           "name": "_receiver",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 321,
+                          "referencedDeclaration": 349,
                           "src": "1687:9:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -10356,11 +10356,11 @@
                         "nodeType": "IndexAccess",
                         "src": "1674:23:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Message_$300_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Message_$328_storage_$dyn_storage",
                           "typeString": "struct MessagingSystem.Message storage ref[] storage ref"
                         }
                       },
-                      "id": 360,
+                      "id": 388,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -10370,11 +10370,11 @@
                       "nodeType": "MemberAccess",
                       "src": "1674:28:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Message_$300_storage_$dyn_storage_ptr_$_t_struct$_Message_$300_storage_$returns$__$attached_to$_t_array$_t_struct$_Message_$300_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Message_$328_storage_$dyn_storage_ptr_$_t_struct$_Message_$328_storage_$returns$__$attached_to$_t_array$_t_struct$_Message_$328_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct MessagingSystem.Message storage ref[] storage pointer,struct MessagingSystem.Message storage ref)"
                       }
                     },
-                    "id": 362,
+                    "id": 390,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10390,7 +10390,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 363,
+                  "id": 391,
                   "nodeType": "ExpressionStatement",
                   "src": "1674:40:1"
                 },
@@ -10399,7 +10399,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 365,
+                          "id": 393,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -10410,7 +10410,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 366,
+                        "id": 394,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -10425,11 +10425,11 @@
                         }
                       },
                       {
-                        "id": 367,
+                        "id": 395,
                         "name": "_receiver",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 321,
+                        "referencedDeclaration": 349,
                         "src": "1776:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -10437,11 +10437,11 @@
                         }
                       },
                       {
-                        "id": 368,
+                        "id": 396,
                         "name": "_contentHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 323,
+                        "referencedDeclaration": 351,
                         "src": "1787:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -10449,11 +10449,11 @@
                         }
                       },
                       {
-                        "id": 369,
+                        "id": 397,
                         "name": "_isEncrypted",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 325,
+                        "referencedDeclaration": 353,
                         "src": "1801:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -10462,7 +10462,7 @@
                       },
                       {
                         "expression": {
-                          "id": 370,
+                          "id": 398,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -10473,7 +10473,7 @@
                             "typeString": "block"
                           }
                         },
-                        "id": 371,
+                        "id": 399,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -10511,18 +10511,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 364,
+                      "id": 392,
                       "name": "MessageSent",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 312,
+                      "referencedDeclaration": 340,
                       "src": "1752:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_string_memory_ptr_$_t_bool_$_t_uint256_$returns$__$",
                         "typeString": "function (address,address,string memory,bool,uint256)"
                       }
                     },
-                    "id": 372,
+                    "id": 400,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10538,20 +10538,20 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 373,
+                  "id": 401,
                   "nodeType": "EmitStatement",
                   "src": "1747:84:1"
                 }
               ]
             },
             "documentation": {
-              "id": 319,
+              "id": 347,
               "nodeType": "StructuredDocumentation",
               "src": "772:312:1",
               "text": " @dev Sends a message to another user.\n @param _receiver The address of the user who will receive the message.\n @param _contentHash The IPFS hash or off-chain storage reference of the message content.\n @param _isEncrypted A boolean indicating whether the message is encrypted."
             },
             "functionSelector": "4674f060",
-            "id": 375,
+            "id": 403,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -10559,17 +10559,17 @@
             "nameLocation": "1098:11:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 326,
+              "id": 354,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 321,
+                  "id": 349,
                   "mutability": "mutable",
                   "name": "_receiver",
                   "nameLocation": "1118:9:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 375,
+                  "scope": 403,
                   "src": "1110:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10578,7 +10578,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 320,
+                    "id": 348,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1110:7:1",
@@ -10592,12 +10592,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 323,
+                  "id": 351,
                   "mutability": "mutable",
                   "name": "_contentHash",
                   "nameLocation": "1143:12:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 375,
+                  "scope": 403,
                   "src": "1129:26:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -10606,7 +10606,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 322,
+                    "id": 350,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1129:6:1",
@@ -10619,12 +10619,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 325,
+                  "id": 353,
                   "mutability": "mutable",
                   "name": "_isEncrypted",
                   "nameLocation": "1162:12:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 375,
+                  "scope": 403,
                   "src": "1157:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10633,7 +10633,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 324,
+                    "id": 352,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1157:4:1",
@@ -10648,12 +10648,12 @@
               "src": "1109:66:1"
             },
             "returnParameters": {
-              "id": 327,
+              "id": 355,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1185:0:1"
             },
-            "scope": 390,
+            "scope": 418,
             "src": "1089:749:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -10661,28 +10661,28 @@
           },
           {
             "body": {
-              "id": 388,
+              "id": 416,
               "nodeType": "Block",
               "src": "2064:48:1",
               "statements": [
                 {
                   "expression": {
                     "baseExpression": {
-                      "id": 383,
+                      "id": 411,
                       "name": "userMessages",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 318,
+                      "referencedDeclaration": 346,
                       "src": "2081:12:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$300_storage_$dyn_storage_$",
+                        "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Message_$328_storage_$dyn_storage_$",
                         "typeString": "mapping(address => struct MessagingSystem.Message storage ref[] storage ref)"
                       }
                     },
-                    "id": 386,
+                    "id": 414,
                     "indexExpression": {
                       "expression": {
-                        "id": 384,
+                        "id": 412,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -10693,7 +10693,7 @@
                           "typeString": "msg"
                         }
                       },
-                      "id": 385,
+                      "id": 413,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -10714,25 +10714,25 @@
                     "nodeType": "IndexAccess",
                     "src": "2081:24:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Message_$300_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_Message_$328_storage_$dyn_storage",
                       "typeString": "struct MessagingSystem.Message storage ref[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 382,
-                  "id": 387,
+                  "functionReturnParameters": 410,
+                  "id": 415,
                   "nodeType": "Return",
                   "src": "2074:31:1"
                 }
               ]
             },
             "documentation": {
-              "id": 376,
+              "id": 404,
               "nodeType": "StructuredDocumentation",
               "src": "1844:147:1",
               "text": " @dev Retrieves the messages of the calling user.\n @return An array of Message structures representing the user's messages."
             },
             "functionSelector": "792f6183",
-            "id": 389,
+            "id": 417,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -10740,56 +10740,56 @@
             "nameLocation": "2005:15:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 377,
+              "id": 405,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2020:2:1"
             },
             "returnParameters": {
-              "id": 382,
+              "id": 410,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 381,
+                  "id": 409,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 389,
+                  "scope": 417,
                   "src": "2046:16:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Message_$300_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Message_$328_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct MessagingSystem.Message[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 379,
+                      "id": 407,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 378,
+                        "id": 406,
                         "name": "Message",
                         "nameLocations": [
                           "2046:7:1"
                         ],
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 300,
+                        "referencedDeclaration": 328,
                         "src": "2046:7:1"
                       },
-                      "referencedDeclaration": 300,
+                      "referencedDeclaration": 328,
                       "src": "2046:7:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Message_$300_storage_ptr",
+                        "typeIdentifier": "t_struct$_Message_$328_storage_ptr",
                         "typeString": "struct MessagingSystem.Message"
                       }
                     },
-                    "id": 380,
+                    "id": 408,
                     "nodeType": "ArrayTypeName",
                     "src": "2046:9:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Message_$300_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Message_$328_storage_$dyn_storage_ptr",
                       "typeString": "struct MessagingSystem.Message[]"
                     }
                   },
@@ -10798,14 +10798,14 @@
               ],
               "src": "2045:18:1"
             },
-            "scope": 390,
+            "scope": 418,
             "src": "1996:116:1",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 391,
+        "scope": 419,
         "src": "184:1930:1",
         "usedErrors": []
       }
@@ -10817,21 +10817,15 @@
     "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
   },
   "networks": {
-    "1706102625387": {
+    "5777": {
       "events": {},
       "links": {},
-      "address": "0x710b3e799Be5e3742d2F72Bf16bcD5Fd4bC66b22",
-      "transactionHash": "0xd03e867b03eea5d2f50a8fa27c54d03db2dbbfb8c6d5462eea97e05f3f703882"
-    },
-    "1706118286143": {
-      "events": {},
-      "links": {},
-      "address": "0x5BBa9a477eE255E16CC23C8AB1657823A33FA2C2",
-      "transactionHash": "0x3a5079c0bc48447b9ef0f6e8e0421bd9c27a4e94141a8664559acb1eb6cceece"
+      "address": "0xaCEdEb827A89785A9fb12584c1269a624BF6C176",
+      "transactionHash": "0x63cacd60857cff2ec551f618335051943e7eacd244eaccc3e6496af2c1cc2da4"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-24T17:45:55.764Z",
+  "updatedAt": "2024-01-27T15:13:32.035Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "A smart contract for facilitating secure and decentralized messaging between users.",

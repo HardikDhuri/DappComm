@@ -1,8 +1,55 @@
-// SignIn.tsx
+import {
+  Dispatch,
+  FC,
+  FormEvent,
+  SetStateAction,
+  useEffect,
+  useState,
+} from "react";
+import { getUserProfile, registerUser } from "../api";
+import { useNavigate } from "react-router-dom";
 
-import React from "react";
+interface SignInProps {
+  address: string;
+  setUser: Dispatch<SetStateAction<User | null>>;
+}
 
-const SignIn: React.FC = () => {
+const SignIn: FC<SignInProps> = ({ setUser, address }) => {
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [displayName, setDisplayName] = useState("");
+
+  useEffect(() => {
+    const fetchUserProfile = async () => {
+      try {
+        const data = await getUserProfile(address);
+        setUser(data.data);
+        navigate("/chat");
+      } catch (error) {
+        console.error("Error fetching user profile:", error);
+      }
+    };
+
+    fetchUserProfile();
+  }, [address]);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const data = await registerUser(username, displayName, address);
+      if (data.success) {
+        const { username, displayName } = await getUserProfile(address);
+        setUser({ username, displayName });
+        navigate("/chat");
+      } else {
+        console.error("Registration failed:", data.message);
+      }
+    } catch (error) {
+      // Handle fetch error
+      console.error("Error registering user:", error);
+    }
+  };
+
   return (
     <div className="flex h-screen">
       {/* Left half on desktop */}
@@ -28,7 +75,7 @@ const SignIn: React.FC = () => {
         {/* Sign In form */}
         <div>
           <h2 className="text-3xl font-bold mb-6">Sign In</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
                 className="block text-gray-500 text-sm font-bold mb-2"
@@ -39,6 +86,8 @@ const SignIn: React.FC = () => {
               <input
                 type="text"
                 id="username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
                 className="w-full border rounded-md py-2 px-3 text-gray-800 bg-white"
                 placeholder="Enter your username"
               />
@@ -53,6 +102,8 @@ const SignIn: React.FC = () => {
               <input
                 type="text"
                 id="displayName"
+                value={displayName}
+                onChange={(e) => setDisplayName(e.target.value)}
                 className="w-full border rounded-md py-2 px-3 text-gray-800 bg-white"
                 placeholder="Enter your display name"
               />

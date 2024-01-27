@@ -1,15 +1,19 @@
-// AddFriend.tsx
-
 import React, { useState } from "react";
 import UserCircle from "./UserCircle";
+import { getUserProfileByUsername } from "../api";
 
-const AddFriend: React.FC = () => {
+interface AddFriendProps {
+  address: string;
+}
+
+const AddFriend: React.FC<AddFriendProps> = ({ address }) => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [foundUser] = useState<string | null>(null);
+  const [foundUser, setFoundUser] = useState<User | null>(null);
 
-  const handleSearch = () => {
-    // Perform the search logic here and set the found user
-    // Example: setFoundUser(searchQuery);
+  const handleSearch = async () => {
+    const userData = await getUserProfileByUsername(address, searchQuery);
+    console.log(userData);
+    setFoundUser(userData);
   };
 
   return (
@@ -32,7 +36,7 @@ const AddFriend: React.FC = () => {
       </div>
 
       {/* Display User Component if found */}
-      {foundUser && <UserCircle displayName="John Doe" username={foundUser} />}
+      {foundUser && <UserCircle user={foundUser} />}
     </div>
   );
 };
