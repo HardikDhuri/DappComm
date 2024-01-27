@@ -1,11 +1,28 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
+interface IUserRelationshipManager {
+    function addFriend(address _friend) external;
+}
+
 /**
  * @title FriendRequestManager
  * @dev A smart contract for managing friend requests between users.
  */
 contract FriendRequestManager {
+
+    // Address of the UserRelationshipManager contract
+    address public relationshipManagerContractAddress;
+
+    /**
+     * @dev Constructor that sets the address of the UserRelationshipManager contract.
+     * @param _relationshipManagerContractAddress The address of the UserRelationshipManager contract.
+     */
+    constructor(address _relationshipManagerContractAddress) {
+        require(_relationshipManagerContractAddress != address(0), "Invalid relationship manager contract address");
+        relationshipManagerContractAddress = _relationshipManagerContractAddress;
+    }
+
     // Enum to represent the status of a friend request
     enum RequestStatus {
         Pending,
@@ -73,6 +90,15 @@ contract FriendRequestManager {
         // Update the status of the friend request
         incomingRequests[index].status = _accept ? RequestStatus.Accepted : RequestStatus.Rejected;
         outgoingRequests[index].status = _accept ? RequestStatus.Accepted : RequestStatus.Rejected;
+
+        // If the friend request is accepted, add users as friends using UserRelationshipManager
+        if (_accept) {
+            // Ensure that the UserRelationshipManager contract address is set
+            require(relationshipManagerContractAddress != address(0), "Relationship manager contract address not set");
+
+            // Call addFriend in UserRelationshipManager to establish the friendship
+            IUserRelationshipManager(relationshipManagerContractAddress).addFriend(_sender);
+        }
 
         // Emit event
         emit FriendRequestUpdated(_sender, msg.sender, incomingRequests[index].status);
