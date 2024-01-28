@@ -2,16 +2,12 @@ import React, { useState } from "react";
 import UserCircle from "./UserCircle";
 import { getUserProfileByUsername } from "../api";
 
-interface AddFriendProps {
-  address: string;
-}
-
-const AddFriend: React.FC<AddFriendProps> = ({ address }) => {
+const AddFriend: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [foundUser, setFoundUser] = useState<User | null>(null);
 
   const handleSearch = async () => {
-    const userData = await getUserProfileByUsername(address, searchQuery);
+    const userData = await getUserProfileByUsername(searchQuery);
     console.log(userData);
     setFoundUser(userData);
   };

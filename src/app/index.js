@@ -54,7 +54,8 @@ app.get("/get_ether_details", function (req, res) {
 // Endpoint to register a new user
 app.post("/register", async (req, res) => {
   try {
-    const { username, displayName, address } = req.body;
+    const { username, displayName } = req.body;
+    const address = req.headers["x-address"];
 
     // Create a transaction object
     const receipt = await contract.methods
@@ -80,7 +81,8 @@ app.post("/register", async (req, res) => {
 // Endpoint to get user profile
 app.get("/profile", async (req, res) => {
   try {
-    const { address, username } = req.query;
+    const { username } = req.query;
+    const address = req.headers["x-address"];
     // Make sure to replace 'USER_ADDRESS' with the user's Ethereum address
     const userProfile = await contract.methods
       .getUserProfile(username)
@@ -106,10 +108,11 @@ app.get("/profile", async (req, res) => {
 app.get("/profilebyaddress", async (req, res) => {
   try {
     const { address } = req.query;
-    // Make sure to replace 'USER_ADDRESS' with the user's Ethereum address
+    const senderAddress = req.headers["x-address"];
+
     const userProfile = await contract.methods
       .getUserProfileByAddress(address)
-      .call({ from: userAddress2 });
+      .call({ from: senderAddress });
 
     uName = userProfile[0];
     displayName = userProfile[1];
@@ -130,20 +133,16 @@ app.get("/profilebyaddress", async (req, res) => {
 app.post("/send-request", async (req, res) => {
   try {
     const { receiverId } = req.body;
-
+    const senderAddress = req.headers["x-address"];
     const receipt = await frmContract.methods
       .sendFriendRequest(receiverId)
-      .send({ from: userAddress2 });
+      .send({ from: senderAddress });
 
-    // Convert BigInt values to strings in the receipt
-    const receiptString = JSON.stringify(receipt, (key, value) =>
-      typeof value === "bigint" ? value.toString() : value
-    );
+    console.log(receipt);
 
     res.json({
       success: true,
       message: "Friend request sent successfully",
-      receipt: JSON.parse(receiptString), // Parse the string back to JSON
     });
   } catch (error) {
     console.error(error);
@@ -154,10 +153,11 @@ app.post("/send-request", async (req, res) => {
 // Endpoint to get incoming friend requests for a specific user
 app.get("/friend-requests/incoming", async (req, res) => {
   try {
+    const senderAddress = req.headers["x-address"];
     // Get incoming friend requests for the user
     const ifrequests = await frmContract.methods
       .getIncomingFriendRequests()
-      .call({ from: userAddress2 });
+      .call({ from: senderAddress });
 
     const ifrequestsJson = JSON.stringify(ifrequests, (key, value) => {
       if (typeof value === "bigint") {
@@ -179,10 +179,11 @@ app.get("/friend-requests/incoming", async (req, res) => {
 // Endpoint to get incoming friend requests for a specific user
 app.get("/friend-requests/outgoing", async (req, res) => {
   try {
+    const senderAddress = req.headers["x-address"];
     // Get incoming friend requests for the user
     const ofrquests = await frmContract.methods
       .getOutgoingFriendRequests()
-      .call({ from: userAddress2 });
+      .call({ from: senderAddress });
     const requests = [];
 
     ofrquests.forEach((request) => {

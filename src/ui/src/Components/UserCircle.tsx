@@ -14,9 +14,6 @@ const UserCircle: React.FC<UserCircleProps> = ({ user }) => {
         <p className="text-xl font-bold">{user.displayName}</p>
         <p className="text-gray-500">{user.address}</p>
       </div>
-      <button className="bg-primary justify-end p-2 rounded-md hover:bg-green-500 transition duration-300">
-        Add Friend
-      </button>
     </div>
   );
 };

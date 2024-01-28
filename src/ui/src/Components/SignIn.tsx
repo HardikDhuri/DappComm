@@ -44,11 +44,7 @@ const SignIn: FC<SignInProps> = ({
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const data = await registerUser(
-        username,
-        displayName,
-        currentUserAddress
-      );
+      const data = await registerUser(username, displayName);
       if (data.success) {
         const { username, displayName, address } = await getUserProfile(
           currentUserAddress
