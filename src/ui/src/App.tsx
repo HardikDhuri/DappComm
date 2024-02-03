@@ -49,7 +49,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home user={currentUser} />}>
-          <Route path="/addfriend" element={<AddFriend />} />
+          <Route
+            path="/addfriend"
+            element={<AddFriend address={connetedAccount} />}
+          />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/chat" element={<Chat selectedFriend={null} />} />
         </Route>

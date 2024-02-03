@@ -2,15 +2,14 @@
 pragma solidity ^0.8.19;
 
 import "./UserRegistery.sol";
-import "./FriendRequestManager.sol";
 
 interface IUserRegistery {
-    function getUserProfile() external view returns (string memory, string memory);
+    function getUserProfileByAddress(address _userAddress) external view returns (string memory, string memory);
 }
 
 /**
  * @title UserRelationshipManager
- * @dev A smart contract for managing user relationships including friendships, removals, and blocking.
+ * @dev A smart contract for managing user relationships including friendships, removals, blocking, and friend requests.
  */
 contract UserRelationshipManager {
     // Enum to represent the status of a user relationship
@@ -26,7 +25,14 @@ contract UserRelationshipManager {
         RelationshipStatus status;
     }
 
-     // Address of the UserRegistery contract
+    // Struct to represent a friend request
+    struct FriendRequest {
+        address sender;
+        address receiver;
+        bool accepted;
+    }
+
+    // Address of the UserRegistery contract
     address public usersContractAddress;
 
     /**
@@ -41,6 +47,9 @@ contract UserRelationshipManager {
     // Mapping to store user relationships
     mapping(address => UserRelationship[]) public userRelationships;
 
+    // Mapping to store friend requests
+    mapping(address => FriendRequest[]) public friendRequests;
+
     // Event emitted when a user becomes friends with another user
     event FriendsAdded(address indexed user1, address indexed user2);
 
@@ -50,12 +59,20 @@ contract UserRelationshipManager {
     // Event emitted when a user blocks another user
     event UserBlocked(address indexed blocker, address indexed blocked);
 
+    // Event emitted when a friend request is sent
+    event FriendRequestSent(address indexed sender, address indexed receiver);
+
+    // Event emitted when a friend request is accepted
+    event FriendRequestAccepted(address indexed sender, address indexed receiver);
+
+    // Event emitted when a friend request is rejected or cancelled
+    event FriendRequestRejectedOrCancelled(address indexed sender, address indexed receiver);
+
     /**
      * @dev Adds a user as a friend after a friend request has been accepted.
      * @param _friend The address of the user to become friends with.
      */
-    function addFriend(address _friend) external {
-
+    function addFriend(address _friend) internal {
         // Check if users are friends already
         require(!areFriends(msg.sender, _friend), "Users are already friends");
 
@@ -71,6 +88,31 @@ contract UserRelationshipManager {
 
         // Emit event
         emit FriendsAdded(msg.sender, _friend);
+    }
+
+    /**
+     * @dev Accepts a friend request from another user.
+     * @param _friend The address of the user who sent the friend request.
+     */
+    function acceptFriendRequest(address _friend) external {
+        // Check if a friend request exists
+        require(hasPendingFriendRequest(_friend, msg.sender), "No pending friend request");
+
+        // Update the status of the friend request to accepted
+        FriendRequest[] storage requests = friendRequests[msg.sender];
+        uint256 index = findFriendRequestIndex(requests, _friend);
+
+        require(index < requests.length, "Friend request not found");
+
+        requests[index].accepted = true;
+
+        // Add the users as friends
+        addFriend(_friend);
+
+        delete requests[index];
+
+        // Emit event
+        emit FriendRequestAccepted(_friend, msg.sender);
     }
 
     /**
@@ -126,6 +168,48 @@ contract UserRelationshipManager {
     }
 
     /**
+     * @dev Sends a friend request to another user.
+     * @param _friend The address of the user to send a friend request to.
+     */
+    function sendFriendRequest(address _friend) external {
+        // Check if a friend request already exists
+        require(!hasPendingFriendRequest(msg.sender, _friend), "Friend request already sent");
+
+        // Create a new friend request
+        FriendRequest memory newRequest = FriendRequest({
+            sender: msg.sender,
+            receiver: _friend,
+            accepted: false
+        });
+
+        // Add the friend request to the receiver's list
+        friendRequests[_friend].push(newRequest);
+
+        // Emit event
+        emit FriendRequestSent(msg.sender, _friend);
+    }
+
+    /**
+     * @dev Rejects or cancels a friend request.
+     * @param _friend The address of the user involved in the friend request.
+     */
+    function rejectOrCancelFriendRequest(address _friend) external {
+        // Check if a friend request exists
+        require(hasPendingFriendRequest(_friend, msg.sender), "No pending friend request");
+
+        // Remove the friend request
+        FriendRequest[] storage requests = friendRequests[msg.sender];
+        uint256 index = findFriendRequestIndex(requests, _friend);
+
+        require(index < requests.length, "Friend request not found");
+
+        delete requests[index];
+
+        // Emit event
+        emit FriendRequestRejectedOrCancelled(_friend, msg.sender);
+    }
+
+    /**
      * @dev Checks if two users are friends.
      * @param _user1 The address of the first user.
      * @param _user2 The address of the second user.
@@ -136,6 +220,24 @@ contract UserRelationshipManager {
 
         for (uint256 i = 0; i < user1Relationships.length; i++) {
             if (user1Relationships[i].user == _user2 && user1Relationships[i].status == RelationshipStatus.Friends) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * @dev Checks if a pending friend request exists between two users.
+     * @param _sender The sender of the friend request.
+     * @param _receiver The receiver of the friend request.
+     * @return A boolean indicating whether a pending friend request exists.
+     */
+    function hasPendingFriendRequest(address _sender, address _receiver) internal view returns (bool) {
+        FriendRequest[] storage requests = friendRequests[_receiver];
+
+        for (uint256 i = 0; i < requests.length; i++) {
+            if (requests[i].sender == _sender && !requests[i].accepted) {
                 return true;
             }
         }
@@ -159,6 +261,21 @@ contract UserRelationshipManager {
     }
 
     /**
+     * @dev Finds the index of a friend request.
+     * @param _requests The array of friend requests to search.
+     * @param _target The address of the user involved in the friend request.
+     * @return The index of the friend request in the array.
+     */
+    function findFriendRequestIndex(FriendRequest[] storage _requests, address _target) internal view returns (uint256) {
+        for (uint256 i = 0; i < _requests.length; i++) {
+            if (_requests[i].sender == _target) {
+                return i;
+            }
+        }
+        return _requests.length;
+    }
+
+    /**
      * @dev Gets all friends for the caller.
      * @return An array of friend objects with address, username, and displayName.
      */
@@ -168,7 +285,7 @@ contract UserRelationshipManager {
 
         for (uint256 i = 0; i < relationships.length; i++) {
             if (relationships[i].status == RelationshipStatus.Friends) {
-                (string memory username, string memory displayName) = IUserRegistery(usersContractAddress).getUserProfile();
+                (string memory username, string memory displayName) = IUserRegistery(usersContractAddress).getUserProfileByAddress(relationships[i].user);
                 friends[i] = FriendInfo({
                     friendAddress: relationships[i].user,
                     friendUsername: username,

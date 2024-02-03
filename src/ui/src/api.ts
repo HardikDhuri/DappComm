@@ -29,7 +29,7 @@ const axiosInstance = axios.create({
 const getUserProfile = async (address: string) => {
   try {
     const response = await axiosInstance.get(
-      `/profilebyaddress?address=${address}`
+      `/profile-by-address?address=${address}`
     );
     return response.data;
   } catch (error) {
@@ -65,12 +65,11 @@ const sendRequest = async (receiverAddress: string) => {
 
 const getUserProfileByUsername = async (username: string) => {
   try {
-    const response = await axiosInstance.get("/profile", {
+    const response = await axiosInstance.get("/profile-by-username", {
       params: {
         username: username,
       },
     });
-    console.log(response);
     return response.data.data;
   } catch (error) {
     console.error("Error searching for user:", error);

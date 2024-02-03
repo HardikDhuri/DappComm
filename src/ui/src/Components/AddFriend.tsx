@@ -1,16 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import UserCircle from "./UserCircle";
-import { getUserProfileByUsername } from "../api";
+import { getUserProfileByUsername, sendRequest } from "../api";
 
-const AddFriend: React.FC = () => {
+interface AddFriendProps {
+  address: string;
+}
+
+const AddFriend: React.FC<AddFriendProps> = ({ address }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [foundUser, setFoundUser] = useState<User | null>(null);
+  const [searched, setSearched] = useState(false);
+  const [requestSent, setRequestSent] = useState(false);
+  const [areFriends] = useState(false);
 
-  const handleSearch = async () => {
-    const userData = await getUserProfileByUsername(searchQuery);
-    console.log(userData);
-    setFoundUser(userData);
+  const handleAddFriend = async (address: string) => {
+    // Add friend logic
+    const response = await sendRequest(address);
+    console.log(response);
+    setRequestSent(true);
   };
+
+  const handleSearch = async (query: string) => {
+    const userData = await getUserProfileByUsername(query);
+    setFoundUser(userData);
+    setSearched(true);
+  };
+
+  useEffect(() => {
+    handleSearch(searchQuery);
+  }, [searchQuery]);
 
   return (
     <div className="flex flex-col">
@@ -25,14 +43,23 @@ const AddFriend: React.FC = () => {
         />
         <button
           className="bg-primary text-white py-2 px-4 rounded-md hover:bg-accent transition duration-300"
-          onClick={handleSearch}
+          onClick={() => handleSearch(searchQuery)}
         >
           Search
         </button>
       </div>
 
       {/* Display User Component if found */}
-      {foundUser && <UserCircle user={foundUser} />}
+      {foundUser?.address === address && <p>That's you!</p>}
+      {foundUser && foundUser.address != address && (
+        <UserCircle
+          handleAddFriend={handleAddFriend}
+          areFriends={areFriends}
+          sent={requestSent}
+          user={foundUser}
+        />
+      )}
+      {searched && !foundUser && <p>No user found</p>}
     </div>
   );
 };

@@ -1,20 +1,20 @@
 const express = require("express");
 var cors = require("cors");
 const { Web3 } = require("web3");
-const URContract = require("./build/contracts/UserRegistery.json");
-const FRMContractJson = require("./build/contracts/FriendRequestManager.json");
+const UserRegisteryContractJson = require("./build/contracts/UserRegistery.json");
+const UserRelationsContractJson = require("./build/contracts/UserRelationshipManager.json");
 
 require("dotenv").config();
 
 const ganacheUrl = process.env.GANACHE_URL;
-const contractAddress = process.env.CONTRACT_ADDRESS;
-const userAddress = process.env.USER_ADDRESS1;
-const userAddress2 = process.env.USER_ADDRESS2;
-const privateKey = process.env.PRIVATE_KEY;
+const userRegisteryAddress = process.env.CONTRACT_ADDRESS;
+const userRelationsAddress = process.env.USER_RELATIONSHIP_MANAGER_ADDRESS;
 const privateKey2 = process.env.PRIVATE_KEY2;
 const FRMContractAddress = process.env.FRIEND_REGISTRY_ADDRESS;
 
 const app = express();
+
+let userCount = 0;
 
 app.use(express.json());
 app.use(cors());
@@ -23,32 +23,39 @@ const port = 2140;
 
 // Connect to the Ethereum network using the HTTP provider
 const httpProvider = new Web3.providers.HttpProvider(ganacheUrl);
-const web3 = new Web3(httpProvider, privateKey2);
+const web3 = new Web3(httpProvider);
 
 // Connect to the smart contract using the ABI and contract address
-const contract = new web3.eth.Contract(URContract.abi, contractAddress);
-contract.options = {
-  address: contractAddress,
-  from: contractAddress,
+const userRegisteryContract = new web3.eth.Contract(
+  UserRegisteryContractJson.abi,
+  userRegisteryAddress
+);
+userRegisteryContract.options = {
+  address: userRegisteryAddress,
+  from: userRegisteryAddress,
   gasPrice: "10000000000000",
   gas: 1000000,
 };
 
-const frmContract = new web3.eth.Contract(
-  FRMContractJson.abi,
-  FRMContractAddress
+const userRelationsContract = new web3.eth.Contract(
+  UserRelationsContractJson.abi,
+  userRelationsAddress
 );
-frmContract.options = {
-  address: FRMContractAddress,
+userRelationsContract.options = {
+  address: userRelationsAddress,
+  from: userRelationsAddress,
+  gasPrice: "10000000000000",
   gas: 1000000,
 };
 
-app.get("/get_ether_details", function (req, res) {
-  var respo = {
-    version: web3.version,
-    // "balance1":balance
-  };
-  res.json(respo);
+const userRegisteredEvent = userRegisteryContract.events.UserRegistered();
+
+userRegisteredEvent.on("data", (data) => {
+  console.log(data);
+});
+
+userRegisteredEvent.on("error", (err) => {
+  console.log(err);
 });
 
 // Endpoint to register a new user
@@ -58,7 +65,7 @@ app.post("/register", async (req, res) => {
     const address = req.headers["x-address"];
 
     // Create a transaction object
-    const receipt = await contract.methods
+    const receipt = await userRegisteryContract.methods
       .registerUser(username, displayName)
       .send({ from: address });
 
@@ -73,27 +80,37 @@ app.post("/register", async (req, res) => {
       message: message,
     });
   } catch (error) {
-    const message = error.innerError.message.split("revert")[1].trim();
+    const message =
+      error.innerError.message.split("revert")[1]?.trim() ??
+      error.innerError.message;
     res.status(500).json({ success: false, message: message });
   }
 });
 
 // Endpoint to get user profile
-app.get("/profile", async (req, res) => {
+app.get("/profile-by-username", async (req, res) => {
   try {
     const { username } = req.query;
     const address = req.headers["x-address"];
     // Make sure to replace 'USER_ADDRESS' with the user's Ethereum address
-    const userProfile = await contract.methods
+    const userProfile = await userRegisteryContract.methods
       .getUserProfile(username)
       .call({ from: address });
+
+    if (userProfile[0] === "0x0000000000000000000000000000000000000000") {
+      res.status(404).json({
+        success: false,
+        message: "User not found",
+      });
+      return;
+    }
 
     res.status(200).json({
       success: true,
       data: {
-        username: userProfile[0],
-        displayName: userProfile[1],
-        address: userProfile[2],
+        address: userProfile[0],
+        username: userProfile[1],
+        displayName: userProfile[2],
       },
     });
   } catch (error) {
@@ -105,12 +122,12 @@ app.get("/profile", async (req, res) => {
 });
 
 // Endpoint to get user profile
-app.get("/profilebyaddress", async (req, res) => {
+app.get("/profile-by-address", async (req, res) => {
   try {
     const { address } = req.query;
     const senderAddress = req.headers["x-address"];
 
-    const userProfile = await contract.methods
+    const userProfile = await userRegisteryContract.methods
       .getUserProfileByAddress(address)
       .call({ from: senderAddress });
 
@@ -132,13 +149,13 @@ app.get("/profilebyaddress", async (req, res) => {
 // Endpoint to sent friend request
 app.post("/send-request", async (req, res) => {
   try {
-    const { receiverId } = req.body;
+    const { receiver } = req.body;
     const senderAddress = req.headers["x-address"];
-    const receipt = await frmContract.methods
-      .sendFriendRequest(receiverId)
-      .send({ from: senderAddress });
+    // const receipt = await userRelationsContract.methods
+    //   .sendFriendRequest(receiverId)
+    //   .send({ from: senderAddress });
 
-    console.log(receipt);
+    console.log("Success");
 
     res.json({
       success: true,
@@ -147,78 +164,6 @@ app.post("/send-request", async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({ success: false, message: "Failed to send request" });
-  }
-});
-
-// Endpoint to get incoming friend requests for a specific user
-app.get("/friend-requests/incoming", async (req, res) => {
-  try {
-    const senderAddress = req.headers["x-address"];
-    // Get incoming friend requests for the user
-    const ifrequests = await frmContract.methods
-      .getIncomingFriendRequests()
-      .call({ from: senderAddress });
-
-    const ifrequestsJson = JSON.stringify(ifrequests, (key, value) => {
-      if (typeof value === "bigint") {
-        return value.toString(); // Convert string representation of a number to BigInt
-      }
-      return value; // Return unchanged for other types
-    });
-
-    res.json({ success: true, data: ifrequestsJson });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({
-      success: false,
-      message: "Failed to fetch incoming friend requests",
-    });
-  }
-});
-
-// Endpoint to get incoming friend requests for a specific user
-app.get("/friend-requests/outgoing", async (req, res) => {
-  try {
-    const senderAddress = req.headers["x-address"];
-    // Get incoming friend requests for the user
-    const ofrquests = await frmContract.methods
-      .getOutgoingFriendRequests()
-      .call({ from: senderAddress });
-    const requests = [];
-
-    ofrquests.forEach((request) => {
-      const requestJson = JSON.stringify(request, (key, value) => {
-        if (typeof value === "bigint") {
-          return value.toString(); // Convert string representation of a number to BigInt
-        }
-        return value; // Return unchanged for other types
-      });
-      requests.push(requestJson);
-    });
-
-    res.json({ success: true, data: JSON.parse(requests) });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({
-      success: false,
-      message: "Failed to fetch outgoing friend requests",
-    });
-  }
-});
-
-// Endpoint to get users
-app.get("/users", async (req, res) => {
-  try {
-    const users = await contract.methods
-      .getAllUserAddresses()
-      .call({ from: userAddress2 });
-
-    res.json({ success: true, data: users });
-  } catch (error) {
-    console.error(error);
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to fetch user profile" });
   }
 });
 
